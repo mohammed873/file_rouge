@@ -34,8 +34,8 @@ if (isset($_POST['signup'])) {
         // registering a new user and sending the data to the database
         $user->sign_up($user_name, $user_email, $user_password, $user_picture, $user_status);
         //sending a register confirmation message to the user
-        $error['message'] = "you have created ur account successfuly <a href='../views/index.php'>log in</a>";
-        $_SESSION['alert_type']= "alert-success";
+        $_SESSION['message'] = "you have created ur account successfuly ";
+        header('location:index.php');
     }
 
 
