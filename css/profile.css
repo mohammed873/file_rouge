@@ -1,0 +1,99 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.header_container img{
+    width: 100%;
+}
+.profile{
+    width: 40%;
+    background-color: #f2f6f8;
+    box-shadow: 0px 5px 10px 0px rgba(0, 47, 104, 0.1);
+    margin: auto;
+    padding: 1%;
+    margin-top: 11px;
+}
+.profile .profile_picture{
+  text-align: center;
+}
+.profile .profile_picture img{
+    width:100px;
+    height: 100px;
+    border-radius: 10%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px;
+    position: relative;
+    top: -77px;
+    z-index: 99;
+}
+.profile h2{
+    text-align: center;
+    color: black;
+    position: relative;
+    top: -42px;
+    font-size: 23px;
+}
+@media only screen and (max-width: 1080px) {
+    .profile{
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 780px) {
+    .profile{
+        width: 80%;
+    }
+}
+.more_profile_info{
+    display: flex;
+    justify-content: space-around;
+}
+.patient_info{
+    flex-basis: 38%;
+    background-color: #3d3fb8;
+    box-shadow: 0px 5px 10px 0px rgba(0, 47, 104, 0.1);
+    text-align: center;
+    padding: 1%;
+}
+.patient_info h3{
+  color: white;
+}
+.consult_doctor{
+    flex-basis: 58%;
+}
+.form_container label{
+    color: yellow;
+    font-family: cursive;
+    font-size: 15px;
+}
+.form_container textarea{
+    width: 80%;
+}
+.message_box{
+    width: 80%;
+    height: 338px;
+    background-color: aliceblue;
+    margin: auto;
+}
+.message_inputs{
+    width: 60%;
+    margin: auto;
+}
+.message_inputs input{
+    width: 100%;
+    padding: 2%;
+}
+@media only screen and (max-width: 1097px) {
+    .more_profile_info{
+        flex-direction: column;
+    }
+    .consult_doctor{
+       width: 90%;
+       margin: auto;
+    }
+    .patient_info{
+        width: 90%;
+        margin: auto;
+     }
+}
