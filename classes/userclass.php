@@ -14,7 +14,6 @@ class Users extends DB
     {
         if (empty($user_name)) {
             $error['user_name'] = "User name required";
-            $_SESSION['alert_type']= "alert-danger";
         }
         if (!filter_var($user_email, FILTER_VALIDATE_EMAIL)) {
             $error['user_email'] = "Email adress is not valid";
