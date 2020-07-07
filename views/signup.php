@@ -22,12 +22,13 @@ include "../controllers/Auth.php";
             <h2 class="text-center h2">New user</h2>
         
             <?php if(count($error) > 0): ?>
-                <div class="alert <?php echo  $_SESSION['alert_type'];  ?>">
+                <div class="alert alert-danger">
                     <?php foreach($error as $error): ?>
                     <li><?php echo $error; ?></li>
                     <?php endforeach; ?>
                 </div>
             <?php endif; ?>
+            <br>
             <form action="signup.php" method="post" enctype="multipart/form-data">
                 <div class="row">
                     <div class="form-group col-md-6">
