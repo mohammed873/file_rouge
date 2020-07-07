@@ -28,7 +28,14 @@ include "../controllers/Auth.php";
                     <?php endforeach; ?>
                 </div>
             <?php endif; ?>
-
+            <?php if(isset($_SESSION['message'])): ?>
+                <div class="alert alert-success">
+                    <li><?php 
+                    echo $_SESSION['message'];
+                    unset($_SESSION['message']);
+                    ?></li>
+                </div>
+            <?php endif; ?>
             <br>
             <form action="index.php" method="POST">
                 <div class="form-group">
