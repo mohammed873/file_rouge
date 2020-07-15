@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 
@@ -139,40 +140,57 @@
           <h2 class="contact-title">Get in Touch</h2>
         </div>
         <div class="col-lg-8">
-          <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm"
+          <!-- <form class="form-contact contact_form" action="" method="post" id="contactForm"
             novalidate="novalidate">
             <div class="row">
               <div class="col-12">
                 <div class="form-group">
 
-                  <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9"
-                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'"
+                  <textarea class="form-control w-100" name="comment" id="message" placeholder = 'Enter Message'
                     placeholder='Enter Message'></textarea>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="form-group">
-                  <input class="form-control" name="name" id="name" type="text" onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Enter your name'" placeholder='Enter your name'>
+                  <input class="form-control" name="firstname" id="name" type="text" 
+                   placeholder='Enter your name'>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="form-group">
-                  <input class="form-control" name="email" id="email" type="email" onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Enter email address'" placeholder='Enter email address'>
+                  <input class="form-control" name="email" id="email" type="email"  placeholder='Enter email address'>
                 </div>
               </div>
               <div class="col-12">
-                <div class="form-group">
-                  <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Enter Subject'" placeholder='Enter Subject'>
-                </div>
+            
               </div>
             </div>
             <div class="form-group mt-3">
-              <button type="submit" class="button button-contactForm btn_1">Send Message</button>
+            
+              <input type="submit" value="Send Message" name="submit"  class="button button-contactForm btn_1"/>
             </div>
-          </form>
+          </form> -->
+
+
+
+          <form action="" method="post" class="form-contact contact_form">
+						<label class="col-sm-6">
+								 <input type="text" name="firstname" value="" placeholder="firstname" class="form-control" id="name" required>
+						</label ><br><br>
+
+            <label class="col-sm-6">
+							 <input type="email" name="email"  value="" placeholder="Your email" class="form-control" id="email" required >
+						</label><br><br>
+
+						<label class="col-sm-6">
+								 <textarea name="comment" id="message" cols="30" placeholder='Enter Message' rows="4" required class="form-control"></textarea> 
+						</label><br><br>
+								
+						<input type="submit" value="Send Us" name="submit" class="button button-contactForm btn_1"/>
+				
+
+					</form>
+
         </div>
         <div class="col-lg-4">
           <div class="media contact-info">
@@ -277,7 +295,7 @@
       <div class="container">
         <div class="row align-items-center">
           <p class="footer-text m-0 col-lg-8 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="hearthy" target="_blank">hearthy</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
           <div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
             <a href="#"><i class="ti-facebook"></i></a>
@@ -320,6 +338,28 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
   <script src="../js/contact.js"></script>
   <!-- custom js -->
   <script src="../js/custom.js"></script>
+
+
+	<?php
+
+						include('../controllers/conect.php');
+						if(isset($_POST['submit'])){
+							
+
+							$sql = "INSERT INTO `contact` (firstname, email,comment)
+							VALUES ('" . $_POST["firstname"] . "','" . $_POST["email"] . "','" . $_POST["comment"] . "' )";
+
+							if ($conn->query($sql) === TRUE) {
+							    echo "<script>location.replace('contact.php');</script>";
+							} else {
+							    echo "<script>alert('There was an Error')<script>" . $sql . "<br>" . $conn->error;
+							}
+
+				
+            }
+            
+           
+					?>  
 </body>
 
 </html>
