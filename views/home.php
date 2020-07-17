@@ -267,18 +267,18 @@
             <div class="row align-items-center regervation_content">
                 <div class="col-lg-7 col-md-6">
                     <div class="regervation_part_iner">
-                        <form>
+                        <form methode="post" action="">
                             <h2>Make an Appointment</h2>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
-                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Name">
+                                    <input type="name" name="user_name" class="form-control" id="inputEmail4" placeholder="Name">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <input type="password" class="form-control" id="inputPassword4"
+                                    <input type="email" name="user_email" class="form-control" id="inputPassword4"
                                         placeholder="Email address">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <select class="form-control" id="Select">
+                                    <select class="form-control" id="Select" name="service_type">
                                         <option value="1" selected>Select service</option>
                                         <option value="2">Doctor care</option>
                                         <option value="3">Nursing care</option>
@@ -287,7 +287,7 @@
                                     </select>
                                 </div>
                                 <div class="form-group time_icon col-md-6">
-                                    <select class="form-control" id="Select2">
+                                    <select class="form-control" id="Select2" name="time">
                                         <option value="" selected>Time</option>
                                         <option value="1">8 AM TO 10AM</option>
                                         <option value="1">10 AM TO 12PM</option>
@@ -300,13 +300,14 @@
                                     </select>
                                 </div>
                                 <div class="form-group col-md-12">
-                                    <textarea class="form-control" id="Textarea" rows="4"
+                                    <textarea class="form-control" id="Textarea" rows="4" name="message"
                                         placeholder="Your Note "></textarea>
                                 </div>
                             </div>
-                            <div class="regerv_btn">
+                            <!-- <div class="regerv_btn">
                                 <a href="#" class="regerv_btn_iner">Make an Appointment</a>
-                            </div>
+                            </div> -->
+                            <input type="submit" placeholder="Send an Appointment" name="submit" class="button button-contactForm btn_1"/>
                         </form>
                     </div>
                 </div>
