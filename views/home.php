@@ -267,27 +267,29 @@
             <div class="row align-items-center regervation_content">
                 <div class="col-lg-7 col-md-6">
                     <div class="regervation_part_iner">
-                        <form methode="post" action="">
+
+                    <!-- make an appointment -->
+                        <form method="post" action="">
                             <h2>Make an Appointment</h2>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
-                                    <input type="name" name="user_name" class="form-control" id="inputEmail4" placeholder="Name">
+                                    <input type="name" name="user_name" class="form-control" id="inputEmail4" placeholder="Name"required>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <input type="email" name="user_email" class="form-control" id="inputPassword4"
-                                        placeholder="Email address">
+                                        placeholder="Email address" required>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <select class="form-control" id="Select" name="service_type">
+                                    <select class="form-control" id="Select" name="service_type" required>
                                         <option value="1" selected>Select service</option>
-                                        <option value="2">Doctor care</option>
-                                        <option value="3">Nursing care</option>
-                                        <option value="4">Medical social services</option>
-                                        <option value="5">Pharmaceutical services</option>
+                                        <option value="Doctor care">Doctor care</option>
+                                        <option value="Nursing care">Nursing care</option>
+                                        <option value="Medical social services">Medical social services</option>
+                                        <option value="Pharmaceutical services">Pharmaceutical services</option>
                                     </select>
                                 </div>
                                 <div class="form-group time_icon col-md-6">
-                                    <select class="form-control" id="Select2" name="time">
+                                    <select class="form-control" id="Select2" name="time" required>
                                         <option value="" selected>Time</option>
                                         <option value="1">8 AM TO 10AM</option>
                                         <option value="1">10 AM TO 12PM</option>
@@ -300,7 +302,7 @@
                                     </select>
                                 </div>
                                 <div class="form-group col-md-12">
-                                    <textarea class="form-control" id="Textarea" rows="4" name="message"
+                                    <textarea class="form-control" id="Textarea" rows="4" name="message" 
                                         placeholder="Your Note "></textarea>
                                 </div>
                             </div>
@@ -309,6 +311,8 @@
                             </div> -->
                             <input type="submit" placeholder="Send an Appointment" name="submit" class="button button-contactForm btn_1"/>
                         </form>
+
+                        <!-- end -->
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-6">
@@ -490,7 +494,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <p class="footer-text m-0 col-lg-8 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="hearthy" target="_blank">hearthy</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="healthy" target="_blank">healthy</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                     <div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
                         <a href="#"><i class="ti-facebook"></i></a>
@@ -534,6 +538,44 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- custom js -->
     <script src="../js/custom.js"></script>
 </body>
+
+
+
+<?php
+    include('../controllers/conect.php');
+    
+    if(isset($_POST['submit'])){
+
+        $user_name= $_POST["user_name"];
+        
+        $user_email= $_POST["user_email"];
+        
+        $service_type= $_POST["service_type"];
+        
+        $time= $_POST["time"];
+        
+        $message= $_POST["message"];
+        
+
+       
+
+
+        $sql = "INSERT INTO `appointment` (`user_name`, `user_email`,`service_type`,`time`,`message`)
+            
+            VALUES ('$user_name','$user_email','$service_type','GETDATE()','$message')";
+
+        if ($conn->query($sql) === TRUE) {
+            echo "<script>location.replace('home.php');</script>";
+        } else {
+            echo "<script>alert('There was an Error')<script>" . $sql . "<br>" . $conn->error;
+        }
+        
+    }
+
+
+?>
+
+
 
 </html>
 
