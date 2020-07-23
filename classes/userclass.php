@@ -10,7 +10,7 @@ class Users extends DB
         return $result;
     }
 
-    public function signupvalidation($user_name,$user_email,$user_password,$user_confpassword,$user_picture)
+    public function signupvalidation($user_name,$user_email,$user_password,$user_confpassword,$user_picture,$error)
     {
         if (empty($user_name)) {
             $error['user_name'] = "User name required";
@@ -57,15 +57,43 @@ class Users extends DB
         return $user_picture;
     }
 
-    public function loginvalidation($user_email,$user_password)
+    public function loginvalidation($user_email,$user_password,$error)
     {
+        if (!filter_var($user_email, FILTER_VALIDATE_EMAIL)) {
+            $error['user_email'] = "Email adress is not valid";
+        }
         if (empty($user_email)) {
             $error['user_email'] = "user email required";
         }
         if (empty($user_password)) {
             $error['user_password'] = "password required";
         }
+
         return $error;
+    }
+
+        public function login($table, $condition)
+    {
+        $conn = $this->connect();
+        $sql = "SELECT * FROM $table";
+        $i = 0;
+        foreach ($condition as $key => $value) {
+            if ($i === 0) {
+                $sql = $sql . " WHERE $key=?";
+            } else {
+                $sql = $sql . " AND $key=?";
+            }
+            $i++;
+        }
+        $sql = $sql . " LIMIT 1";
+
+        $stmt = $conn->prepare($sql);
+        $value = array_values($condition);
+        $type = str_repeat('s', count($value));
+        $stmt->bind_param($type, ...$value);
+        $stmt->execute();
+        $records = $stmt->get_result()->fetch_assoc();
+        return $records;
     }
 
 }

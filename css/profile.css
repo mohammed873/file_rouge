@@ -45,55 +45,20 @@ body{
         width: 80%;
     }
 }
-.more_profile_info{
-    display: flex;
-    justify-content: space-around;
+.chat_container{
+    margin: auto;padding: 1%;box-shadow: 0px 0px 8px;
 }
-.patient_info{
-    flex-basis: 38%;
-    background-color: #3d3fb8;
-    box-shadow: 0px 5px 10px 0px rgba(0, 47, 104, 0.1);
-    text-align: center;
-    padding: 1%;
-}
-.patient_info h3{
-  color: white;
-}
-.consult_doctor{
-    flex-basis: 58%;
-}
-.form_container label{
-    color: yellow;
-    font-family: cursive;
-    font-size: 15px;
-}
-.form_container textarea{
-    width: 80%;
-}
-.message_box{
-    width: 80%;
-    height: 338px;
-    background-color: aliceblue;
-    margin: auto;
-}
-.message_inputs{
-    width: 60%;
-    margin: auto;
-}
-.message_inputs input{
-    width: 100%;
+#chatbox{
     padding: 2%;
+    height:40vh;
+    background-color:#092f7d;
 }
-@media only screen and (max-width: 1097px) {
-    .more_profile_info{
-        flex-direction: column;
-    }
-    .consult_doctor{
-       width: 90%;
-       margin: auto;
-    }
-    .patient_info{
-        width: 90%;
-        margin: auto;
-     }
+#chatbox p{
+    font-size: 20px;
+    background-color: white;
+    padding: 1%;
+    border-radius: 0px 10px 10px 25px;
+    text-align: center;
+    width: fit-content;
+    color: black;
 }

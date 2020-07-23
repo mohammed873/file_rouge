@@ -1,10 +1,13 @@
+<?php
+   include '../controllers/conversation.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>profile</title>
-    <link rel="stylesheet" href="../css/profile.css">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -28,6 +31,7 @@
     <link rel="stylesheet" href="../css/slick.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/profile.css">
 </head>
 <body>
      <!--::header part start::-->
@@ -92,51 +96,41 @@
 <!-- profile_card part start-->
     <div class="profile">
        <div class="profile_picture">
-           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTreksTEerNOVl1wm7JRykQifXUI_RKimR8jjtzG-e1AcyrTajW&usqp=CAU" alt="profile_pic">
+           <img src="<?php echo 'uploads/' . $_SESSION['user_picture']; ?>" alt="profile_pic">
        </div>
-       <h2>Name :</h2>
-       <h2>Email :</h2>
+       <h2>Name : <span style="color: blue;"><?php echo $_SESSION['user_name'];?></span></h2>
+       <h2>Email : <span style="color: blue;"><?php echo $_SESSION['user_email'];?></span></h2>
+       <h2>Status : <span style="color: blue;"><?php echo $_SESSION['user_status'];?></span></h2>
     </div><br><br>
 <!-- profile_card part ends-->
 
 <!-- middle extra profile details starts-->
-<div class="more_profile_info">
-    <div class="patient_info">
-        <form action="#">
-            <h3>More Profile Details</h3><br>
-            <div class="form_container">
-                    <label for="qs1">have you ever visted a doctor , if yes , then why</label><br>
-                    <textarea name="" id="qs1" cols="10" rows="4" ></textarea>
-            </div>
-            <div class="form_container">
-                    <label for="qs1">do you take medical bills, if yes , then why and for what </label><br>
-                    <textarea name="" id="qs1"  cols="10" rows="4"></textarea>
-            </div>
-            <div class="form_container">
-                    <label for="qs1">if you are in pain , can you descripe it</label><br>
-                    <textarea name="" id="qs1" cols="10" rows="4" ></textarea>
-            </div>
-            <br><br>
-            <div>
-                <button type="submit" class="btn btn-block bg-success text-white">send now</button>
-            </div>
-        </form>   
-    </div>
-   <br><br>
-    <div class="consult_doctor">
-        <div class="patient_info">
-            <form action="#">
-                <h3>Consult The Doctor</h3><br>
-                <div class="message_box"></div><br>
-                <div class="message_inputs">
-                    <input type="text" placeholder="enter your message" style="text-align: center;"><br><br>
-                    <button type="submit" class="btn btn-block bg-danger text-white">consult now</button>
-                </div><br>
-                
-            </form>   
-        </div>
-    </div>
-</div><br>
+<div class="col-md-6 chat_container">
+<h2 class="text-center"> consult the doctor</h2><br>
+    <form action="profile.php" action="post">
+        <div id="chatbox">
+            <p>hi doctor mohammed can i meet you</p><br>
+            <p>yes we can </p>
+        </div><br>
+        <input type="hidden" name="patient_id" value="<?php echo $_SESSION['user_id'];?>">
+        <?php  
+                $con = $chat->connect();
+                $sql="SELECT * FROM users WHERE user_status = 'admin'";
+                $stm=$con->prepare($sql);
+                $stm->execute();
+                $result=$stm->get_result();
+            ?>
+        <select id="doctor_option">
+                 <option value="#">chose a doctor to send a message</option>
+            <?php while($row=$result->fetch_assoc()){ ?>
+                <option name="doctor_id" value="<?=$row['user_id'];?>"><?=$row['user_name'];?></option>
+            <?php } ?>
+        </select><br><br><br>
+        <input type="text" placeholder="Enter a message" class="form-control" name="message"><br>
+        <button type="submit" class="btn-success p-2 btn-block form-control" name="consult_now"> consult</button>
+    </form>
+</div>
+<br><br>
  <!-- middle extra profile details ends-->   
 
 
@@ -216,7 +210,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <p class="footer-text m-0 col-lg-8 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="healthy" target="_blank">healthy</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                     <div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
                         <a href="#"><i class="ti-facebook"></i></a>

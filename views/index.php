@@ -28,19 +28,11 @@ include "../controllers/Auth.php";
                     <?php endforeach; ?>
                 </div>
             <?php endif; ?>
-            <?php if(isset($_SESSION['message'])): ?>
-                <div class="alert alert-success">
-                    <li><?php 
-                    echo $_SESSION['message'];
-                    unset($_SESSION['message']);
-                    ?></li>
-                </div>
-            <?php endif; ?>
             <br>
             <form action="index.php" method="POST">
                 <div class="form-group">
                   <label>useremail</label>
-                  <input type="email" class="form-control" name="user_email" placeholder="user email" >
+                  <input type="text" class="form-control" name="user_email" placeholder="user email" value="<?php echo $user_email; ?>">
                 </div>
                 <div class="form-group">
                   <label>password</label>

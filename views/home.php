@@ -291,14 +291,14 @@
                                 <div class="form-group time_icon col-md-6">
                                     <select class="form-control" id="Select2" name="time" required>
                                         <option value="" selected>Time</option>
-                                        <option value="1">8 AM TO 10AM</option>
-                                        <option value="1">10 AM TO 12PM</option>
-                                        <option value="1">12PM TO 2PM</option>
-                                        <option value="1">2PM TO 4PM</option>
-                                        <option value="1">4PM TO 6PM</option>
-                                        <option value="1">6PM TO 8PM</option>
-                                        <option value="1">4PM TO 10PM</option>
-                                        <option value="1">10PM TO 12PM</option>
+                                        <option value="8 AM TO 10AM">8 AM TO 10AM</option>
+                                        <option value="10 AM TO 12PM">10 AM TO 12PM</option>
+                                        <option value="12PM TO 2PM">12PM TO 2PM</option>
+                                        <option value="2PM TO 4PM">2PM TO 4PM</option>
+                                        <option value="4PM TO 6PM">4PM TO 6PM</option>
+                                        <option value="6PM TO 8PM">6PM TO 8PM</option>
+                                        <option value="4PM TO 10PM">4PM TO 10PM</option>
+                                        <option value="4PM TO 10PM">10PM TO 12PM</option>
                                     </select>
                                 </div>
                                 <div class="form-group col-md-12">
@@ -562,7 +562,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
         $sql = "INSERT INTO `appointment` (`user_name`, `user_email`,`service_type`,`time`,`message`)
             
-            VALUES ('$user_name','$user_email','$service_type','GETDATE()','$message')";
+            VALUES ('$user_name','$user_email','$service_type','$time','$message')";
 
         if ($conn->query($sql) === TRUE) {
             echo "<script>location.replace('home.php');</script>";

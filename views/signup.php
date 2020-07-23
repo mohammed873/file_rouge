@@ -28,16 +28,24 @@ include "../controllers/Auth.php";
                     <?php endforeach; ?>
                 </div>
             <?php endif; ?>
+            <?php if(isset($_SESSION['message'])): ?>
+                <div class="alert alert-success">
+                    <li><?php 
+                    echo $_SESSION['message'];
+                    unset($_SESSION['message']);
+                    ?></li>
+                </div>
+            <?php endif; ?>
             <br>
             <form action="signup.php" method="post" enctype="multipart/form-data">
                 <div class="row">
                     <div class="form-group col-md-6">
                         <label for="username">Username</label>
-                        <input type="text" name="user_name" class="form-control" placeholder="username" > 
+                        <input type="text" value="<?php echo $user_name; ?>" name="user_name" class="form-control" placeholder="username" > 
                     </div>
                     <div class="form-group col-md-6">
                         <label for="useremail">useremail</label>
-                        <input type="text" name="user_email" class="form-control" placeholder="email" > 
+                        <input type="text" value="<?php echo $user_email; ?>"  name="user_email" class="form-control" placeholder="email" > 
                     </div>
                 </div>
                 <div class="row">   
