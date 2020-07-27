@@ -1,3 +1,7 @@
+<?php
+  include_once ('../controllers/appointement.php');
+  $conn = new Appointement();
+?>
 <!doctype html>
 <html lang="en">
 
@@ -6,25 +10,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>medical</title>
-    <link rel="icon" href="img/favicon.png">
+    <link rel="icon" href="../assests/img/favicon.png">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assests/css/bootstrap.min.css">
     <!-- animate CSS -->
-    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../assests/css/animate.css">
     <!-- owl carousel CSS -->
-    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assests/css/owl.carousel.min.css">
     <!-- themify CSS -->
-    <link rel="stylesheet" href="../css/themify-icons.css">
+    <link rel="stylesheet" href="../assests/css/themify-icons.css">
     <!-- flaticon CSS -->
-    <link rel="stylesheet" href="../css/flaticon.css">
+    <link rel="stylesheet" href="../assests/css/flaticon.css">
     <!-- magnific popup CSS -->
-    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <link rel="stylesheet" href="../assests/css/magnific-popup.css">
     <!-- nice select CSS -->
-    <link rel="stylesheet" href="../css/nice-select.css">
+    <link rel="stylesheet" href="../assests/css/nice-select.css">
     <!-- swiper CSS -->
-    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../assests/css/slick.css">
     <!-- style CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../assests/css/style.css">
 </head>
 
 <body>
@@ -34,7 +38,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="home.php"> <img src="../img/logo.png" alt="logo"> </a>
+                        <a class="navbar-brand" href="home.php"> <img src="../assests/img/logo.png" alt="logo"> </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -84,15 +88,15 @@
                             <a href="#appointment_section" class="btn_2">Make an appointment</a>
                             <div class="banner_item">
                                 <div class="single_item">
-                                    <img src="../img/icon/banner_1.svg" alt="">
+                                    <img src="../assests/img/icon/banner_1.svg" alt="">
                                     <h5>Emergency Cases</h5>
                                 </div>
                                 <div class="single_item">
-                                    <img src="../img/icon/banner_2.svg" alt="">
+                                    <img src="../assests/img/icon/banner_2.svg" alt="">
                                     <h5>Easy Appointment</h5>
                                 </div>
                                 <div class="single_item">
-                                    <img src="../img/icon/banner_3.svg" alt="">
+                                    <img src="../assests/img/icon/banner_3.svg" alt="">
                                     <h5>Qualfied Doctores</h5>
                                 </div>
                             </div>
@@ -122,7 +126,7 @@
                             <div class="col-lg-6 col-sm-6">
                                 <div class="single_feature">
                                     <div class="single_feature_part">
-                                        <span class="single_feature_icon"><img src="../img/icon/feature_1.svg"
+                                        <span class="single_feature_icon"><img src="../assests/img/icon/feature_1.svg"
                                                 alt=""></span>
                                         <h4>Doctor care</h4>
                                         <p>A doctor may visit a patient at home to diagnose and treat the illness(es). He or she may also periodically review the home health care needs.</p>
@@ -132,7 +136,7 @@
                             <div class="col-lg-6 col-sm-6">
                                 <div class="single_feature">
                                     <div class="single_feature_part">
-                                        <span class="single_feature_icon"><img src="../img/icon/feature_2.svg"
+                                        <span class="single_feature_icon"><img src="../assests/img/icon/feature_2.svg"
                                                 alt=""></span>
                                         <h4>Nursing care</h4>
                                         <p>The most common form of home health care is some type of nursing care depending on the person's needs.A registered nurse will set up a plan of care.</p>
@@ -142,7 +146,7 @@
                             <div class="col-lg-6 col-sm-6">
                                 <div class="single_feature">
                                     <div class="single_feature_part">
-                                        <span class="single_feature_icon"><img src="../img/icon/feature_2.svg"
+                                        <span class="single_feature_icon"><img src="../assests/img/icon/feature_2.svg"
                                                 alt=""></span>
                                         <h4>Medical social services</h4>
                                         <p>Medical social workers provide various services to the patient, including counseling and locating community resources to help them recover faster.</p>
@@ -152,7 +156,7 @@
                             <div class="col-lg-6 col-sm-6">
                                 <div class="single_feature">
                                     <div class="single_feature_part">
-                                        <span class="single_feature_icon"><img src="../img/icon/feature_1.svg"
+                                        <span class="single_feature_icon"><img src="../assests/img/icon/feature_1.svg"
                                                 alt=""></span>
                                         <h4>Pharmaceutical services</h4>
                                         <p>Medicine and medical equipment can be delivered at home. If the patient needs it, training can be provided on how to take medicines or use of the equipment.</p>
@@ -173,7 +177,7 @@
             <div class="row justify-content-between align-items-center">
                 <div class="col-md-6 col-lg-6">
                     <div class="our_ability_img">
-                        <img src="../img/ability_img.png" alt="">
+                        <img src="../assests/img/ability_img.png" alt="">
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-5">
@@ -211,7 +215,7 @@
                 </div>
                 <div class="col-md-6 col-lg-6">
                     <div class="our_ability_img">
-                        <img src="../img/top_service.png" alt="">
+                        <img src="../assests/img/top_service.png" alt="">
                     </div>
                 </div>
             </div>
@@ -226,7 +230,7 @@
                 <div class="col-lg-10">
                     <div class="client_review_part owl-carousel">
                         <div class="client_review_single">
-                            <img src="../img/Quote.png" class="Quote" alt="quote">
+                            <img src="../assests/img/Quote.png" class="Quote" alt="quote">
                             <div class="client_review_text">
                                 <p>Cheerfulness is the best promoter of health and is as friendly to the mind as to the body.
                                 </p>
@@ -234,21 +238,21 @@
                             <h4>Joseph Addison</h4>
                         </div>
                         <div class="client_review_single">
-                            <img src="../img/Quote.png" class="Quote" alt="quote">
+                            <img src="../assests/img/Quote.png" class="Quote" alt="quote">
                             <div class="client_review_text media-body">
                                 <p>There is one consolation in being sick; and that is the possibility that you may recover to a better state than you were ever in before.</p>
                             </div>
                             <h4>Henry David Thoreau</h4>
                         </div>
                         <div class="client_review_single">
-                            <img src="../img/Quote.png" class="Quote" alt="quote">
+                            <img src="../assests/img/Quote.png" class="Quote" alt="quote">
                             <div class="client_review_text">
                                 <p>Give a man health and a course to steer, and he'll never stop to trouble about whether he's happy or not.</p>
                             </div>
                             <h4>George Bernard Shaw</h4>
                         </div>
                         <div class="client_review_single">
-                            <img src="../img/Quote.png" class="Quote" alt="quote">
+                            <img src="../assests/img/Quote.png" class="Quote" alt="quote">
                             <div class="client_review_text">
                                 <p>Health is the soul that animates all the enjoyments of life, which fade and are tasteless without it.</p>
                             </div>
@@ -266,22 +270,37 @@
         <div class="container">
             <div class="row align-items-center regervation_content">
                 <div class="col-lg-7 col-md-6">
-                    <div class="regervation_part_iner">
+                    <div class="regervation_part_iner" style="padding: 6px;">
 
                     <!-- make an appointment -->
-                        <form method="post" action="">
-                            <h2>Make an Appointment</h2>
+                    <h2 class="text-center">Make an Appointment</h2>
+                        <?php if(count($error) > 0): ?>
+                            <div class="alert alert-danger text-center">
+                                <?php foreach($error as $error): ?>
+                                <li style="list-style: none;"><?php echo $error; ?></li>
+                                <?php endforeach; ?>
+                            </div>
+                        <?php endif; ?>
+                        <?php if(isset($_SESSION['message'])): ?>
+                            <div class="alert alert-success text-center">
+                                <li style="list-style: none;"><?php 
+                                echo $_SESSION['message'];
+                                unset($_SESSION['message']);
+                                ?></li>
+                            </div>
+                        <?php endif; ?>
+                        <form method="post" action="home.php">
+                            <input type="hidden" name="user_id" value="<?php echo $_SESSION['user_id']; ?>">
                             <div class="form-row">
                                 <div class="form-group col-md-6">
-                                    <input type="name" name="user_name" class="form-control" id="inputEmail4" placeholder="Name"required>
+                                    <input type="name" name="user_name" class="form-control" id="inputEmail4" placeholder="Name" value="<?php echo $user_name; ?>">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <input type="email" name="user_email" class="form-control" id="inputPassword4"
-                                        placeholder="Email address" required>
+                                    <input type="text" name="user_email" class="form-control" id="inputPassword4" placeholder="Email address" value="<?php echo $user_email; ?>">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <select class="form-control" id="Select" name="service_type" required>
-                                        <option value="1" selected>Select service</option>
+                                    <select class="form-control" id="Select" name="service_type">
+                                        <option value="Select service" selected>Select service</option>
                                         <option value="Doctor care">Doctor care</option>
                                         <option value="Nursing care">Nursing care</option>
                                         <option value="Medical social services">Medical social services</option>
@@ -289,8 +308,8 @@
                                     </select>
                                 </div>
                                 <div class="form-group time_icon col-md-6">
-                                    <select class="form-control" id="Select2" name="time" required>
-                                        <option value="" selected>Time</option>
+                                    <select class="form-control" id="Select2" name="time">
+                                        <option value="Time" selected>Time</option>
                                         <option value="8 AM TO 10AM">8 AM TO 10AM</option>
                                         <option value="10 AM TO 12PM">10 AM TO 12PM</option>
                                         <option value="12PM TO 2PM">12PM TO 2PM</option>
@@ -302,14 +321,24 @@
                                     </select>
                                 </div>
                                 <div class="form-group col-md-12">
-                                    <textarea class="form-control" id="Textarea" rows="4" name="message" 
-                                        placeholder="Your Note "></textarea>
+                                    <textarea class="form-control" id="Textarea"  name="message"placeholder="Your Note "></textarea>
                                 </div>
-                            </div>
-                            <!-- <div class="regerv_btn">
-                                <a href="#" class="regerv_btn_iner">Make an Appointment</a>
-                            </div> -->
-                            <input type="submit" placeholder="Send an Appointment" name="submit" class="button button-contactForm btn_1"/>
+                                     <?php  
+                                        $con = $conn->connect();
+                                        $sql="SELECT * FROM users WHERE user_status = 'admin'";
+                                        $stm=$con->prepare($sql);
+                                        $stm->execute();
+                                        $result=$stm->get_result();
+                                    ?>
+                                <select id="doctor_option" class="bg-warning btn-block p-2 " name="doctor_id">
+                                        <option value="Chose a Doctor">Chose a Doctor</option>
+                                    <?php while($row=$result->fetch_assoc()){ ?>
+                                        <option value="<?=$row['user_id'];?>"><?=$row['user_name'];?></option>
+                                    <?php } ?>
+                                </select>
+                                <input type="hidden" name="appointement_status" value="On Hold">
+                            </div><br>
+                            <button type="submit" name="make_appointmet"  class="btn btn-block  btn-primary p-2"  id="make-appointement">make appointmet</button>
                         </form>
 
                         <!-- end -->
@@ -317,7 +346,7 @@
                 </div>
                 <div class="col-lg-5 col-md-6">
                     <div class="reservation_img">
-                        <img src="../img/reservation.png" alt="">
+                        <img src="../assests/img/reservation.png" alt="">
                     </div>
                 </div>
             </div>
@@ -340,7 +369,7 @@
                 <div class="col-sm-6 col-lg-3">
                     <div class="single_blog_item">
                         <div class="single_blog_img">
-                            <img src="../img/doctor/doctor_1.png" alt="doctor">
+                            <img src="../assests/img/doctor/doctor_1.png" alt="doctor">
                             <div class="social_icon">
                                 <a href="#"> <i class="ti-facebook"></i> </a>
                                 <a href="#"> <i class="ti-twitter-alt"></i> </a>
@@ -359,7 +388,7 @@
                 <div class="col-sm-6 col-lg-3">
                     <div class="single_blog_item">
                         <div class="single_blog_img">
-                            <img src="../img/doctor/doctor_4.png" alt="doctor">
+                            <img src="../assests/img/doctor/doctor_4.png" alt="doctor">
                             <div class="social_icon">
                                 <a href="#"> <i class="ti-facebook"></i> </a>
                                 <a href="#"> <i class="ti-twitter-alt"></i> </a>
@@ -378,7 +407,7 @@
                 <div class="col-sm-6 col-lg-3">
                     <div class="single_blog_item">
                         <div class="single_blog_img">
-                            <img src="../img/doctor/doctor_2.png" alt="doctor">
+                            <img src="../assests/img/doctor/doctor_2.png" alt="doctor">
                             <div class="social_icon">
                                 <a href="#"> <i class="ti-facebook"></i> </a>
                                 <a href="#"> <i class="ti-twitter-alt"></i> </a>
@@ -397,7 +426,7 @@
                 <div class="col-sm-6 col-lg-3">
                     <div class="single_blog_item">
                         <div class="single_blog_img">
-                            <img src="../img/doctor/doctor_3.png" alt="doctor">
+                            <img src="../assests/img/doctor/doctor_3.png" alt="doctor">
                             <div class="social_icon">
                                 <a href="#"> <i class="ti-facebook"></i> </a>
                                 <a href="#"> <i class="ti-twitter-alt"></i> </a>
@@ -511,70 +540,44 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <!-- jquery plugins here-->
 
-    <script src="../js/jquery-1.12.1.min.js"></script>
+    <script src="../assests/js/jquery-1.12.1.min.js"></script>
     <!-- popper js -->
-    <script src="../js/popper.min.js"></script>
+    <script src="../assests/js/popper.min.js"></script>
     <!-- bootstrap js -->
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="../assests/js/bootstrap.min.js"></script>
     <!-- easing js -->
-    <script src="../js/jquery.magnific-popup.js"></script>
+    <script src="../assests/js/jquery.magnific-popup.js"></script>
     <!-- swiper js -->
-    <script src="../js/swiper.min.js"></script>
+    <script src="../assests/js/swiper.min.js"></script>
     <!-- swiper js -->
-    <script src="../js/masonry.pkgd.js"></script>
+    <script src="../assests/js/masonry.pkgd.js"></script>
     <!-- particles js -->
-    <script src="../js/owl.carousel.min.js"></script>
-    <script src="../js/jquery.nice-select.min.js"></script>
+    <script src="../assests/js/owl.carousel.min.js"></script>
+    <script src="../assests/js/jquery.nice-select.min.js"></script>
     <!-- swiper js -->
-    <script src="../js/slick.min.js"></script>
-    <script src="../js/jquery.counterup.min.js"></script>
-    <script src="../js/waypoints.min.js"></script>
+    <script src="../assests/js/slick.min.js"></script>
+    <script src="../assests/js/jquery.counterup.min.js"></script>
+    <script src="../assests/js/waypoints.min.js"></script>
     <!-- contact js -->
-    <script src="../js/jquery.ajaxchimp.min.js"></script>
-    <script src="../js/jquery.form.js"></script>
-    <script src="../js/jquery.validate.min.js"></script>
-    <script src="../js/mail-script.js"></script>
+    <script src="../assests/js/jquery.ajaxchimp.min.js"></script>
+    <script src="../assests/js/jquery.form.js"></script>
+    <script src="../assests/js/jquery.validate.min.js"></script>
+    <script src="../assests/js/mail-script.js"></script>
+
 
 </body>
 
+<script>
+    // $(document).ready(function(){
+    //     $("#make-appointement").load("http://localhost/done/views/home.php#appointment_section",function(){
+    //         window.scrollBy(900, 900);
+    //     });
+    // });
 
-
-<?php
-    include('../controllers/conect.php');
-    
-    if(isset($_POST['submit'])){
-
-        $user_name= $_POST["user_name"];
-        
-        $user_email= $_POST["user_email"];
-        
-        $service_type= $_POST["service_type"];
-        
-        $time= $_POST["time"];
-        
-        $message= $_POST["message"];
-        
-
-       
-
-
-        $sql = "INSERT INTO `appointment` (`user_name`, `user_email`,`service_type`,`time`,`message`)
-            
-            VALUES ('$user_name','$user_email','$service_type','$time','$message')";
-
-        if ($conn->query($sql) === TRUE) {
-            echo "<script>location.replace('home.php');</script>";
-        } else {
-            echo "<script>alert('There was an Error')<script>" . $sql . "<br>" . $conn->error;
-        }
-        
-    }
-
-
-?>
-
-
-
+    // function scrollWin() {
+    //      window.scrollBy(900, 900);
+    // }
+</script>
 </html>
 
 

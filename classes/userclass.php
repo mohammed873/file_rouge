@@ -1,5 +1,7 @@
 <?php
+
 include '../controllers/config.php';
+
 class Users extends DB
 {
     public function sign_up($user_name, $user_email, $user_password, $user_picture, $user_status)
@@ -68,11 +70,10 @@ class Users extends DB
         if (empty($user_password)) {
             $error['user_password'] = "password required";
         }
-
         return $error;
     }
 
-        public function login($table, $condition)
+    public function login($table, $condition)
     {
         $conn = $this->connect();
         $sql = "SELECT * FROM $table";

@@ -11,12 +11,14 @@ class Chat extends DB
         return $result;
     }
 
-    // public function message_validation($message)
-    // {
-    //     if (empty($message)) {
-    //         $error['message'] = "message field must not be empty";
-    //     }
-    // }
+    public function message_validation($message,$error)
+    {
+        if (empty($message)) {
+            $error['message'] = "message field must not be empty";
+        }
+
+        return $error;
+    }
 }
 
 

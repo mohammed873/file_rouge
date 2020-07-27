@@ -1,4 +1,8 @@
 
+<?php
+ include_once ('../controllers/contact.php');
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -7,25 +11,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>medical</title>
-  <link rel="icon" href="../img/favicon.png">
+  <link rel="icon" href="../assests/img/favicon.png">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assests/css/bootstrap.min.css">
   <!-- animate CSS -->
-  <link rel="stylesheet" href="../css/animate.css">
+  <link rel="stylesheet" href="../assests/css/animate.css">
   <!-- owl carousel CSS -->
-  <link rel="stylesheet" href="../css/owl.carousel.min.css">
+  <link rel="stylesheet" href="../assests/css/owl.carousel.min.css">
   <!-- themify CSS -->
-  <link rel="stylesheet" href="../css/themify-icons.css">
+  <link rel="stylesheet" href="../assests/css/themify-icons.css">
   <!-- flaticon CSS -->
-  <link rel="stylesheet" href="../css/flaticon.css">
+  <link rel="stylesheet" href="../assests/css/flaticon.css">
   <!-- magnific popup CSS -->
-  <link rel="stylesheet" href="../css/magnific-popup.css">
+  <link rel="stylesheet" href="../assests/css/magnific-popup.css">
   <!-- nice select CSS -->
-  <link rel="stylesheet" href="../css/nice-select.css">
+  <link rel="stylesheet" href="../assests/css/nice-select.css">
   <!-- swiper CSS -->
-  <link rel="stylesheet" href="../css/slick.css">
+  <link rel="stylesheet" href="../assests/css/slick.css">
   <!-- style CSS -->
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../assests/css/style.css">
 </head>
 
 <body>
@@ -35,7 +39,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="home.php"> <img src="../img/logo.png" alt="logo"> </a>
+                        <a class="navbar-brand" href="home.php"> <img src="../assests/img/logo.png" alt="logo"> </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -140,25 +144,40 @@
           <h2 class="contact-title">Get in Touch</h2>
         </div>
         <div class="col-lg-8">
-          <!-- <form class="form-contact contact_form" action="" method="post" id="contactForm"
+        <?php if(count($error) > 0): ?>
+                <div class="alert alert-danger text-center">
+                    <?php foreach($error as $error): ?>
+                    <li style="list-style: none;"><?php echo $error; ?></li>
+                    <?php endforeach; ?>
+                </div>
+            <?php endif; ?>
+            <?php if(isset($_SESSION['message'])): ?>
+                <div class="alert alert-success text-center">
+                    <li style="list-style: none;"><?php 
+                    echo $_SESSION['message'];
+                    unset($_SESSION['message']);
+                    ?></li>
+                </div>
+            <?php endif; ?>
+            <br>
+          <form class="form-contact contact_form" action="contact.php" method="post" id="contactForm"
             novalidate="novalidate">
+            <input type="hidden" name="user_id" value="<?php echo $_SESSION['user_id'];?>">
             <div class="row">
               <div class="col-12">
                 <div class="form-group">
-
-                  <textarea class="form-control w-100" name="comment" id="message" placeholder = 'Enter Message'
-                    placeholder='Enter Message'></textarea>
+                  <textarea class="form-control w-100" name="comment" id="message" placeholder = 'Enter Message' ></textarea >
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="form-group">
                   <input class="form-control" name="firstname" id="name" type="text" 
-                   placeholder='Enter your name'>
+                   placeholder='Enter your name' value="<?php echo $firstname; ?>">
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="form-group">
-                  <input class="form-control" name="email" id="email" type="email"  placeholder='Enter email address'>
+                  <input class="form-control" name="email" id="email" type="email"  placeholder='Enter email address' value="<?php echo $email; ?>">
                 </div>
               </div>
               <div class="col-12">
@@ -166,32 +185,12 @@
               </div>
             </div>
             <div class="form-group mt-3">
-            
-              <input type="submit" value="Send Message" name="submit"  class="button button-contactForm btn_1"/>
+              <button type="submit" name="contact_message" class="btn btn-block btn-primary">send message</button>
             </div>
-          </form> -->
-
-
-
-          <form action="" method="post" class="form-contact contact_form">
-						<label class="col-sm-6">
-								 <input type="text" name="firstname" value="" placeholder="firstname" class="form-control" id="name" required>
-						</label ><br><br>
-
-            <label class="col-sm-6">
-							 <input type="email" name="email"  value="" placeholder="Your email" class="form-control" id="email" required >
-						</label><br><br>
-
-						<label class="col-sm-6">
-								 <textarea name="comment" id="message" cols="30" placeholder='Enter Message' rows="4" required class="form-control"></textarea> 
-						</label><br><br>
-								
-						<input type="submit" value="Send Us" name="submit" class="button button-contactForm btn_1"/>
-				
-
-					</form>
+          </form>
 
         </div>
+
         <div class="col-lg-4">
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="ti-home"></i></span>
@@ -312,54 +311,34 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
   <!-- jquery plugins here-->
 
-  <script src="../js/jquery-1.12.1.min.js"></script>
+  <script src="../assests/js/jquery-1.12.1.min.js"></script>
   <!-- popper js -->
-  <script src="../js/popper.min.js"></script>
+  <script src="../assests/js/popper.min.js"></script>
   <!-- bootstrap js -->
-  <script src="../js/bootstrap.min.js"></script>
+  <script src="../assests/js/bootstrap.min.js"></script>
   <!-- easing js -->
-  <script src="../js/jquery.magnific-popup.js"></script>
+  <script src="../assests/js/jquery.magnific-popup.js"></script>
   <!-- swiper js -->
-  <script src="../js/swiper.min.js"></script>
+  <script src="../assests/js/swiper.min.js"></script>
   <!-- swiper js -->
-  <script src="../js/masonry.pkgd.js"></script>
+  <script src="../assests/js/masonry.pkgd.js"></script>
   <!-- particles js -->
-  <script src="../js/owl.carousel.min.js"></script>
-  <script src="../js/jquery.nice-select.min.js"></script>
+  <script src="../assests/js/owl.carousel.min.js"></script>
+  <script src="../assests/js/jquery.nice-select.min.js"></script>
   <!-- swiper js -->
-  <script src="../js/slick.min.js"></script>
-  <script src="../js/jquery.counterup.min.js"></script>
-  <script src="../js/waypoints.min.js"></script>
+  <script src="../assests/js/slick.min.js"></script>
+  <script src="../assests/js/jquery.counterup.min.js"></script>
+  <script src="../assests/js/waypoints.min.js"></script>
   <!-- contact js -->
-  <script src="../js/jquery.ajaxchimp.min.js"></script>
-  <script src="../js/jquery.form.js"></script>
-  <script src="../js/jquery.validate.min.js"></script>
-  <script src="../js/mail-script.js"></script>
-  <script src="../js/contact.js"></script>
+  <script src="../assests/js/jquery.ajaxchimp.min.js"></script>
+  <script src="../assests/js/jquery.form.js"></script>
+  <script src="../assests/js/jquery.validate.min.js"></script>
+  <script src="../assests/js/mail-script.js"></script>
+  <script src="../assests/js/contact.js"></script>
   <!-- custom js -->
-  <script src="../js/custom.js"></script>
+  <script src="../assests/js/custom.js"></script>
 
 
-	<?php
-
-						include('../controllers/conect.php');
-						if(isset($_POST['submit'])){
-							
-
-							$sql = "INSERT INTO `contact` (firstname, email,comment)
-							VALUES ('" . $_POST["firstname"] . "','" . $_POST["email"] . "','" . $_POST["comment"] . "' )";
-
-							if ($conn->query($sql) === TRUE) {
-							    echo "<script>location.replace('contact.php');</script>";
-							} else {
-							    echo "<script>alert('There was an Error')<script>" . $sql . "<br>" . $conn->error;
-							}
-
-				
-            }
-            
-           
-					?>  
 </body>
 
 </html>

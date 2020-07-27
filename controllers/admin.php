@@ -38,11 +38,12 @@ if (isset($_POST['add_admin'])) {
         // registering a new user and sending the data to the database
         $user->sign_up($user_name, $user_email, $user_password, $user_picture, $user_status);
         //sending a register confirmation message to the user
-        $_SESSION['message'] = "admin has been added successfuly <a href = '../views/index.php'>log in now</a>";
+        $_SESSION['message'] = "admin has been added successfuly";
+        //empty inputs field after submiting the form
+        $user_name = '';
+        $user_email = '';
     }
 }
-
-
 
 /* deleting admins (doctors) */
 if(isset($_GET['delete'])){
@@ -54,5 +55,18 @@ if(isset($_GET['delete'])){
       $stmt->bind_param("i",$id);
       $stmt->execute();
       header('location:admin_panel.php');
+
+}
+
+/*update the appointement status*/
+if(isset($_POST['manage'])){
+    $appointment_id = $_POST['appointment_id'];
+    $appointement_status = $_POST['appointement-status'];
+
+    $con = $user->connect();
+    $query = "UPDATE appointment SET appointement_status = '$appointement_status' WHERE appointment_id = '$appointment_id'";
+    $stmt=$con->prepare($query);
+    $stmt->execute();
+
 
 }

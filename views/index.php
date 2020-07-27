@@ -10,7 +10,7 @@ include "../controllers/Auth.php";
     <title>index</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="../assests/css/auth.css">
 </head>
 <body>
   <div class="big_container">

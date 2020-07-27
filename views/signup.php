@@ -10,7 +10,7 @@ include "../controllers/Auth.php";
     <title>index</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="../assests/css/auth.css">
 </head>
 <body>
   <div class="big_container">
@@ -40,11 +40,11 @@ include "../controllers/Auth.php";
             <form action="signup.php" method="post" enctype="multipart/form-data">
                 <div class="row">
                     <div class="form-group col-md-6">
-                        <label for="username">Username</label>
+                        <label for="username">User name</label>
                         <input type="text" value="<?php echo $user_name; ?>" name="user_name" class="form-control" placeholder="username" > 
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="useremail">useremail</label>
+                        <label for="useremail">user email</label>
                         <input type="text" value="<?php echo $user_email; ?>"  name="user_email" class="form-control" placeholder="email" > 
                     </div>
                 </div>

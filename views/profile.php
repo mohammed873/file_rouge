@@ -1,5 +1,7 @@
 <?php
-   include '../controllers/conversation.php';
+
+   include_once('../classes/appointement_class.php');
+   $conn = new Appointement();
 ?>
 
 <!DOCTYPE html>
@@ -12,26 +14,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>medical</title>
-    <link rel="icon" href="../img/favicon.png">
+    <link rel="icon" href="../assests/img/favicon.png">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assests/css/bootstrap.min.css">
     <!-- animate CSS -->
-    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../assests/css/animate.css">
     <!-- owl carousel CSS -->
-    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assests/css/owl.carousel.min.css">
     <!-- themify CSS -->
-    <link rel="stylesheet" href="../css/themify-icons.css">
+    <link rel="stylesheet" href="../assests/css/themify-icons.css">
     <!-- flaticon CSS -->
-    <link rel="stylesheet" href="../css/flaticon.css">
+    <link rel="stylesheet" href="../assests/css/flaticon.css">
     <!-- magnific popup CSS -->
-    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <link rel="stylesheet" href="../assests/css/magnific-popup.css">
     <!-- nice select CSS -->
-    <link rel="stylesheet" href="../css/nice-select.css">
+    <link rel="stylesheet" href="../assests/css/nice-select.css">
     <!-- swiper CSS -->
-    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../assests/css/slick.css">
     <!-- style CSS -->
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../assests/css/style.css">
+    <link rel="stylesheet" href="../assests/css/profile.css">
 </head>
 <body>
      <!--::header part start::-->
@@ -40,7 +42,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="home.php"> <img src="../img/logo.png" alt="logo"> </a>
+                        <a class="navbar-brand" href="home.php"> <img src="../assests/img/logo.png" alt="logo"> </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -114,23 +116,66 @@
         </div><br>
         <input type="hidden" name="patient_id" value="<?php echo $_SESSION['user_id'];?>">
         <?php  
-                $con = $chat->connect();
+                $con = $conn->connect();
                 $sql="SELECT * FROM users WHERE user_status = 'admin'";
                 $stm=$con->prepare($sql);
                 $stm->execute();
                 $result=$stm->get_result();
             ?>
-        <select id="doctor_option">
+        <select id="doctor_option" class="bg-warning btn-block p-2 ">
                  <option value="#">chose a doctor to send a message</option>
             <?php while($row=$result->fetch_assoc()){ ?>
                 <option name="doctor_id" value="<?=$row['user_id'];?>"><?=$row['user_name'];?></option>
             <?php } ?>
-        </select><br><br><br>
+        </select><br><br>
         <input type="text" placeholder="Enter a message" class="form-control" name="message"><br>
         <button type="submit" class="btn-success p-2 btn-block form-control" name="consult_now"> consult</button>
     </form>
 </div>
 <br><br>
+
+<!-- showing appointement in a form of a table -->
+<div class="col-md-8" style="margin: auto;">
+        <?php
+            
+            $user_id = $_SESSION['user_id'];
+
+            $con = $conn->connect();
+            $sql="SELECT * FROM `appointment` WHERE user_id = '$user_id' ";
+            $stm=$con->prepare($sql);
+            $stm->execute();
+            $result=$stm->get_result();
+        ?>
+			<h4 class="text-center bg-primary p-2 text-white">Appointement table</h4>
+			<br>
+		  <table class="table mr-4 bg-info ">
+			<thead class="thead-dark">
+				<tr>
+                    <th>Appointement Id</th>
+                    <th>User Id</th>
+					<th>User Name</th>
+					<th>User Email</th>
+                    <th>service Type</th>
+                    <th>Appointement Time</th>
+                    <th>message</th>
+                    <th>Appointement Status</th>
+				</tr>
+			</thead>
+			<tbody class="tbody-dark">
+			<?php while($row=$result->fetch_assoc()){ ?>
+				<tr>
+                    <td><?=$row['appointment_id'];?></td>
+					<td><?=$row['user_id'];?></td>
+					<td><?=$row['user_name'];?></td>
+                    <td><?=$row['user_email'];?></td>
+                    <td><?=$row['service_type'];?></td>
+                    <td><?=$row['time'];?></td>
+                    <td><?=$row['message'];?></td>
+                    <td><?=$row['appointement_status'];?></td>
+				<?php } ?>
+			</tbody>
+          </table>
+</div>
  <!-- middle extra profile details ends-->   
 
 
@@ -227,29 +272,29 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <!-- jquery plugins here-->
 
-    <script src="../js/jquery-1.12.1.min.js"></script>
+    <script src="../assests/js/jquery-1.12.1.min.js"></script>
     <!-- popper js -->
-    <script src="../js/popper.min.js"></script>
+    <script src="../assests/js/popper.min.js"></script>
     <!-- bootstrap js -->
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="../assests/js/bootstrap.min.js"></script>
     <!-- easing js -->
-    <script src="../js/jquery.magnific-popup.js"></script>
+    <script src="../assests/js/jquery.magnific-popup.js"></script>
     <!-- swiper js -->
-    <script src="../js/swiper.min.js"></script>
+    <script src="../assests/js/swiper.min.js"></script>
     <!-- swiper js -->
-    <script src="../js/masonry.pkgd.js"></script>
+    <script src="../assests/js/masonry.pkgd.js"></script>
     <!-- particles js -->
-    <script src="../js/owl.carousel.min.js"></script>
-    <script src="../js/jquery.nice-select.min.js"></script>
+    <script src="../assests/js/owl.carousel.min.js"></script>
+    <script src="../assests/js/jquery.nice-select.min.js"></script>
     <!-- swiper js -->
-    <script src="../js/slick.min.js"></script>
-    <script src="../js/jquery.counterup.min.js"></script>
-    <script src="../js/waypoints.min.js"></script>
+    <script src="../assests/js/slick.min.js"></script>
+    <script src="../assests/js/jquery.counterup.min.js"></script>
+    <script src="../assests/js/waypoints.min.js"></script>
     <!-- contact js -->
-    <script src="../js/jquery.ajaxchimp.min.js"></script>
-    <script src="../js/jquery.form.js"></script>
-    <script src="../js/jquery.validate.min.js"></script>
-    <script src="../js/mail-script.js"></script>
+    <script src="../assests/js/jquery.ajaxchimp.min.js"></script>
+    <script src="../assests/js/jquery.form.js"></script>
+    <script src="../assests/js/jquery.validate.min.js"></script>
+    <script src="../assests/js/mail-script.js"></script>
 
 </body>
 </body>

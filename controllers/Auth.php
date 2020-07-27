@@ -1,4 +1,5 @@
 <?php
+
 include('../classes/userclass.php');
 
 $user = new Users();
@@ -62,7 +63,7 @@ if (isset($_POST['login'])) {
              $_SESSION['user_email'] = $user_data['user_email'];
              $_SESSION['user_picture'] = $user_data['user_picture'];
              $_SESSION['user_status'] = $user_data['user_status'];
-             header('location:profile.php');
+             header('location:home.php');
              exit();
         }
         else if($user_data && password_verify($user_password , $user_data['user_password']) && $user_data['user_status'] == 'admin'){
