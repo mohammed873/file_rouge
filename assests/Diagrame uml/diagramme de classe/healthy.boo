@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{C74EB48B-D322-4080-B5A6-9F54CDF03CE6}" Label="" LastModificationDate="1598874148" Name="healthy" Objects="113" Symbols="26" Target="Analyse" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{C74EB48B-D322-4080-B5A6-9F54CDF03CE6}" Label="" LastModificationDate="1593976360" Name="healthy" Objects="58" Symbols="14" Target="Analyse" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -12,7 +12,7 @@
 <a:Code>healthy</a:Code>
 <a:CreationDate>1593969537</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1598873819</a:ModificationDate>
+<a:ModificationDate>1593973957</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:PackageOptionsText>[FolderOptions]
 
@@ -2055,7 +2055,7 @@ PreserveMode=Yes</a:ModelOptionsText>
 <a:Code>HEALTHY</a:Code>
 <a:CreationDate>1593974520</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1598874147</a:ModificationDate>
+<a:ModificationDate>1593974520</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:TargetStereotype/>
 <a:TargetID>D41EF9E9-ABC3-41F6-A2EB-99E525B6251C</a:TargetID>
@@ -2083,7 +2083,7 @@ PreserveMode=Yes</a:ModelOptionsText>
 <a:Code>DiagrammeClasses_1</a:Code>
 <a:CreationDate>1593969537</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1598873819</a:ModificationDate>
+<a:ModificationDate>1593971660</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:DisplayPreferences>[DisplayPreferences]
 
@@ -2496,10 +2496,10 @@ Shadow=0</a:DisplayPreferences>
 <a:PaperSource>15</a:PaperSource>
 <c:Symbols>
 <o:AssociationSymbol Id="o6">
-<a:CreationDate>1593971349</a:CreationDate>
-<a:ModificationDate>1598873969</a:ModificationDate>
-<a:Rect>((-19148,-29351), (-14677,3915))</a:Rect>
-<a:ListOfPoints>((-16701,3915),(-16701,-13704),(-17124,-13704),(-17124,-29351))</a:ListOfPoints>
+<a:CreationDate>1593971338</a:CreationDate>
+<a:ModificationDate>1593971469</a:ModificationDate>
+<a:Rect>((-21449,-374), (-13949,11220))</a:Rect>
+<a:ListOfPoints>((-19575,-374),(-19575,5455),(-15973,5455),(-15973,11220))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>3336</a:ArrowStyle>
 <a:LineColor>16744448</a:LineColor>
@@ -2517,10 +2517,10 @@ MULA 0 Arial,8,N</a:FontList>
 </c:Object>
 </o:AssociationSymbol>
 <o:AssociationSymbol Id="o10">
-<a:CreationDate>1593971493</a:CreationDate>
-<a:ModificationDate>1598873808</a:ModificationDate>
-<a:Rect>((-14393,6215), (18083,31462))</a:Rect>
-<a:ListOfPoints>((-14393,31462),(-14393,7389),(18083,7389))</a:ListOfPoints>
+<a:CreationDate>1593971349</a:CreationDate>
+<a:ModificationDate>1593973254</a:ModificationDate>
+<a:Rect>((-11051,-23823), (6675,-17418))</a:Rect>
+<a:ListOfPoints>((-11051,-18593),(-3131,-18593),(-3131,-22650),(6675,-22650))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>3336</a:ArrowStyle>
 <a:LineColor>16744448</a:LineColor>
@@ -2538,94 +2538,10 @@ MULA 0 Arial,8,N</a:FontList>
 </c:Object>
 </o:AssociationSymbol>
 <o:AssociationSymbol Id="o14">
-<a:CreationDate>1593971572</a:CreationDate>
-<a:ModificationDate>1598873969</a:ModificationDate>
-<a:Rect>((-16701,-3750), (18885,5089))</a:Rect>
-<a:ListOfPoints>((-16701,3915),(-131,3915),(-131,-2577),(18885,-2577))</a:ListOfPoints>
-<a:CornerStyle>1</a:CornerStyle>
-<a:ArrowStyle>3336</a:ArrowStyle>
-<a:LineColor>16744448</a:LineColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>DISPNAME 0 Arial,8,N
-MULA 0 Arial,8,N</a:FontList>
-<c:SourceSymbol>
-<o:ClassSymbol Ref="o7"/>
-</c:SourceSymbol>
-<c:DestinationSymbol>
-<o:ClassSymbol Ref="o12"/>
-</c:DestinationSymbol>
-<c:Object>
-<o:Association Ref="o15"/>
-</c:Object>
-</o:AssociationSymbol>
-<o:AssociationSymbol Id="o16">
-<a:CreationDate>1593971660</a:CreationDate>
-<a:ModificationDate>1598873969</a:ModificationDate>
-<a:Rect>((-11376,-16473), (20175,7365))</a:Rect>
-<a:ListOfPoints>((-11376,7365),(-11376,-15300),(20175,-15300))</a:ListOfPoints>
-<a:CornerStyle>1</a:CornerStyle>
-<a:ArrowStyle>3336</a:ArrowStyle>
-<a:LineColor>16744448</a:LineColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>DISPNAME 0 Arial,8,N
-MULA 0 Arial,8,N</a:FontList>
-<c:SourceSymbol>
-<o:ClassSymbol Ref="o7"/>
-</c:SourceSymbol>
-<c:DestinationSymbol>
-<o:ClassSymbol Ref="o17"/>
-</c:DestinationSymbol>
-<c:Object>
-<o:Association Ref="o18"/>
-</c:Object>
-</o:AssociationSymbol>
-<o:AssociationSymbol Id="o19">
-<a:CreationDate>1598873164</a:CreationDate>
-<a:ModificationDate>1598873811</a:ModificationDate>
-<a:Rect>((-14597,34603), (2428,36951))</a:Rect>
-<a:ListOfPoints>((-14597,35777),(2428,35777))</a:ListOfPoints>
-<a:CornerStyle>1</a:CornerStyle>
-<a:ArrowStyle>3336</a:ArrowStyle>
-<a:LineColor>16744448</a:LineColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>DISPNAME 0 Arial,8,N
-MULA 0 Arial,8,N</a:FontList>
-<c:SourceSymbol>
-<o:ClassSymbol Ref="o11"/>
-</c:SourceSymbol>
-<c:DestinationSymbol>
-<o:ClassSymbol Ref="o20"/>
-</c:DestinationSymbol>
-<c:Object>
-<o:Association Ref="o21"/>
-</c:Object>
-</o:AssociationSymbol>
-<o:AssociationSymbol Id="o22">
-<a:CreationDate>1598873204</a:CreationDate>
-<a:ModificationDate>1598873813</a:ModificationDate>
-<a:Rect>((-11621,14537), (6083,33095))</a:Rect>
-<a:ListOfPoints>((-11621,31921),(-6022,31921),(-6022,15711),(6083,15711))</a:ListOfPoints>
-<a:CornerStyle>1</a:CornerStyle>
-<a:ArrowStyle>3336</a:ArrowStyle>
-<a:LineColor>16744448</a:LineColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>DISPNAME 0 Arial,8,N
-MULA 0 Arial,8,N</a:FontList>
-<c:SourceSymbol>
-<o:ClassSymbol Ref="o11"/>
-</c:SourceSymbol>
-<c:DestinationSymbol>
-<o:ClassSymbol Ref="o23"/>
-</c:DestinationSymbol>
-<c:Object>
-<o:Association Ref="o24"/>
-</c:Object>
-</o:AssociationSymbol>
-<o:AssociationSymbol Id="o25">
-<a:CreationDate>1598873732</a:CreationDate>
-<a:ModificationDate>1598873732</a:ModificationDate>
-<a:Rect>((-11253,-24926), (17152,-22578))</a:Rect>
-<a:ListOfPoints>((-11253,-23753),(17152,-23753))</a:ListOfPoints>
+<a:CreationDate>1593971350</a:CreationDate>
+<a:ModificationDate>1593971469</a:ModificationDate>
+<a:Rect>((-10037,11125), (6000,13130))</a:Rect>
+<a:ListOfPoints>((-10037,11956),(-1330,11956),(-1330,12299),(6000,12299))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>3336</a:ArrowStyle>
 <a:LineColor>16744448</a:LineColor>
@@ -2636,18 +2552,17 @@ MULA 0 Arial,8,N</a:FontList>
 <o:ClassSymbol Ref="o8"/>
 </c:SourceSymbol>
 <c:DestinationSymbol>
-<o:ClassSymbol Ref="o26"/>
+<o:ClassSymbol Ref="o15"/>
 </c:DestinationSymbol>
 <c:Object>
-<o:Association Ref="o27"/>
+<o:Association Ref="o16"/>
 </c:Object>
 </o:AssociationSymbol>
-<o:AssociationSymbol Id="o28">
-<a:CreationDate>1598873819</a:CreationDate>
-<a:ModificationDate>1598873861</a:ModificationDate>
-<a:DestinationTextOffset>(-1119, 496)</a:DestinationTextOffset>
-<a:Rect>((9166,20090), (18241,30520))</a:Rect>
-<a:ListOfPoints>((9166,29346),(18241,29346),(18241,20090))</a:ListOfPoints>
+<o:AssociationSymbol Id="o17">
+<a:CreationDate>1593971493</a:CreationDate>
+<a:ModificationDate>1593971493</a:ModificationDate>
+<a:Rect>((-11790,2576), (17625,12168))</a:Rect>
+<a:ListOfPoints>((-11407,12168),(-11790,3750),(17625,3750))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>3336</a:ArrowStyle>
 <a:LineColor>16744448</a:LineColor>
@@ -2655,20 +2570,175 @@ MULA 0 Arial,8,N</a:FontList>
 <a:FontList>DISPNAME 0 Arial,8,N
 MULA 0 Arial,8,N</a:FontList>
 <c:SourceSymbol>
-<o:ClassSymbol Ref="o20"/>
+<o:ClassSymbol Ref="o8"/>
 </c:SourceSymbol>
 <c:DestinationSymbol>
-<o:ClassSymbol Ref="o29"/>
+<o:ClassSymbol Ref="o18"/>
 </c:DestinationSymbol>
 <c:Object>
-<o:Association Ref="o30"/>
+<o:Association Ref="o19"/>
+</c:Object>
+</o:AssociationSymbol>
+<o:AssociationSymbol Id="o20">
+<a:CreationDate>1593971572</a:CreationDate>
+<a:ModificationDate>1593973254</a:ModificationDate>
+<a:Rect>((-11954,-19044), (18300,-1199))</a:Rect>
+<a:ListOfPoints>((-10080,-19044),(-10080,-1200),(18300,-1200))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>3336</a:ArrowStyle>
+<a:LineColor>16744448</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+MULA 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:ClassSymbol Ref="o11"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:ClassSymbol Ref="o18"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Association Ref="o21"/>
+</c:Object>
+</o:AssociationSymbol>
+<o:AssociationSymbol Id="o22">
+<a:CreationDate>1593971650</a:CreationDate>
+<a:ModificationDate>1593973254</a:ModificationDate>
+<a:Rect>((-21812,-19586), (-17304,-5210))</a:Rect>
+<a:ListOfPoints>((-19725,-5210),(-19725,-18413),(-17304,-18413))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>3336</a:ArrowStyle>
+<a:LineColor>16744448</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+MULA 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:ClassSymbol Ref="o7"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:ClassSymbol Ref="o11"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Association Ref="o23"/>
+</c:Object>
+</o:AssociationSymbol>
+<o:AssociationSymbol Id="o24">
+<a:CreationDate>1593971660</a:CreationDate>
+<a:ModificationDate>1593973254</a:ModificationDate>
+<a:Rect>((-8829,-15346), (14175,-12616))</a:Rect>
+<a:ListOfPoints>((-6955,-15346),(-6955,-12975),(14175,-12975))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>3336</a:ArrowStyle>
+<a:LineColor>16744448</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+MULA 0 Arial,8,N</a:FontList>
+<c:SourceSymbol>
+<o:ClassSymbol Ref="o11"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:ClassSymbol Ref="o25"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Association Ref="o26"/>
 </c:Object>
 </o:AssociationSymbol>
 <o:ClassSymbol Id="o7">
 <a:CreationDate>1593969999</a:CreationDate>
-<a:ModificationDate>1598873969</a:ModificationDate>
+<a:ModificationDate>1593971449</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-23356,-2377), (-10046,10207))</a:Rect>
+<a:Rect>((-23261,-6707), (-13787,2955))</a:Rect>
+<a:LineColor>16744448</a:LineColor>
+<a:FillColor>16770222</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+CNTR 0 Arial,8,N
+Attributes 0 Arial,8,N
+ClassPrimaryAttribute 0 Arial,8,U
+Operations 0 Arial,8,N
+InnerClassifiers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Class Ref="o27"/>
+</c:Object>
+</o:ClassSymbol>
+<o:ClassSymbol Id="o15">
+<a:CreationDate>1593970001</a:CreationDate>
+<a:ModificationDate>1593971456</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((2294,8253), (10608,14995))</a:Rect>
+<a:LineColor>16744448</a:LineColor>
+<a:FillColor>16770222</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+CNTR 0 Arial,8,N
+Attributes 0 Arial,8,N
+ClassPrimaryAttribute 0 Arial,8,U
+Operations 0 Arial,8,N
+InnerClassifiers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Class Ref="o28"/>
+</c:Object>
+</o:ClassSymbol>
+<o:ClassSymbol Id="o8">
+<a:CreationDate>1593970001</a:CreationDate>
+<a:ModificationDate>1593971469</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-19843,7956), (-7305,14696))</a:Rect>
+<a:LineColor>16744448</a:LineColor>
+<a:FillColor>16770222</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+CNTR 0 Arial,8,N
+Attributes 0 Arial,8,N
+ClassPrimaryAttribute 0 Arial,8,U
+Operations 0 Arial,8,N
+InnerClassifiers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Class Ref="o29"/>
+</c:Object>
+</o:ClassSymbol>
+<o:ClassSymbol Id="o11">
+<a:CreationDate>1593970003</a:CreationDate>
+<a:ModificationDate>1593973254</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-18588,-20757), (-6746,-14991))</a:Rect>
+<a:LineColor>16744448</a:LineColor>
+<a:FillColor>16770222</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+CNTR 0 Arial,8,N
+Attributes 0 Arial,8,N
+ClassPrimaryAttribute 0 Arial,8,U
+Operations 0 Arial,8,N
+InnerClassifiers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Class Ref="o30"/>
+</c:Object>
+</o:ClassSymbol>
+<o:ClassSymbol Id="o18">
+<a:CreationDate>1593970006</a:CreationDate>
+<a:ModificationDate>1593971477</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((12380,-1910), (20618,3858))</a:Rect>
 <a:LineColor>16744448</a:LineColor>
 <a:FillColor>16770222</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -2687,12 +2757,11 @@ LABL 0 Arial,8,N</a:FontList>
 <o:Class Ref="o31"/>
 </c:Object>
 </o:ClassSymbol>
-<o:ClassSymbol Id="o11">
-<a:CreationDate>1593970001</a:CreationDate>
-<a:ModificationDate>1598873808</a:ModificationDate>
+<o:ClassSymbol Id="o12">
+<a:CreationDate>1593970006</a:CreationDate>
+<a:ModificationDate>1593971513</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-22829,23225), (-10291,36403))</a:Rect>
-<a:AutoAdjustToText>0</a:AutoAdjustToText>
+<a:Rect>((2518,-27482), (10832,-17818))</a:Rect>
 <a:LineColor>16744448</a:LineColor>
 <a:FillColor>16770222</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -2707,16 +2776,15 @@ LABL 0 Arial,8,N</a:FontList>
 <a:BrushStyle>6</a:BrushStyle>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
-<a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
 <o:Class Ref="o32"/>
 </c:Object>
 </o:ClassSymbol>
-<o:ClassSymbol Id="o12">
-<a:CreationDate>1593970006</a:CreationDate>
-<a:ModificationDate>1598873529</a:ModificationDate>
+<o:ClassSymbol Id="o25">
+<a:CreationDate>1593970012</a:CreationDate>
+<a:ModificationDate>1593971433</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((11854,-4007), (21638,7605))</a:Rect>
+<a:Rect>((13383,-16045), (22315,-7355))</a:Rect>
 <a:LineColor>16744448</a:LineColor>
 <a:FillColor>16770222</a:FillColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -2735,144 +2803,6 @@ LABL 0 Arial,8,N</a:FontList>
 <o:Class Ref="o33"/>
 </c:Object>
 </o:ClassSymbol>
-<o:ClassSymbol Id="o8">
-<a:CreationDate>1593970006</a:CreationDate>
-<a:ModificationDate>1598872159</a:ModificationDate>
-<a:IconMode>-1</a:IconMode>
-<a:Rect>((-21823,-30594), (-9827,-21906))</a:Rect>
-<a:LineColor>16744448</a:LineColor>
-<a:FillColor>16770222</a:FillColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 Arial,8,N
-DISPNAME 0 Arial,8,N
-CNTR 0 Arial,8,N
-Attributes 0 Arial,8,N
-ClassPrimaryAttribute 0 Arial,8,U
-Operations 0 Arial,8,N
-InnerClassifiers 0 Arial,8,N
-LABL 0 Arial,8,N</a:FontList>
-<a:BrushStyle>6</a:BrushStyle>
-<a:GradientFillMode>65</a:GradientFillMode>
-<a:GradientEndColor>16777215</a:GradientEndColor>
-<c:Object>
-<o:Class Ref="o34"/>
-</c:Object>
-</o:ClassSymbol>
-<o:ClassSymbol Id="o17">
-<a:CreationDate>1593970012</a:CreationDate>
-<a:ModificationDate>1598871937</a:ModificationDate>
-<a:IconMode>-1</a:IconMode>
-<a:Rect>((11958,-16195), (20890,-7505))</a:Rect>
-<a:LineColor>16744448</a:LineColor>
-<a:FillColor>16770222</a:FillColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 Arial,8,N
-DISPNAME 0 Arial,8,N
-CNTR 0 Arial,8,N
-Attributes 0 Arial,8,N
-ClassPrimaryAttribute 0 Arial,8,U
-Operations 0 Arial,8,N
-InnerClassifiers 0 Arial,8,N
-LABL 0 Arial,8,N</a:FontList>
-<a:BrushStyle>6</a:BrushStyle>
-<a:GradientFillMode>65</a:GradientFillMode>
-<a:GradientEndColor>16777215</a:GradientEndColor>
-<c:Object>
-<o:Class Ref="o35"/>
-</c:Object>
-</o:ClassSymbol>
-<o:ClassSymbol Id="o20">
-<a:CreationDate>1598872485</a:CreationDate>
-<a:ModificationDate>1598874148</a:ModificationDate>
-<a:IconMode>-1</a:IconMode>
-<a:Rect>((-1927,24247), (10019,36831))</a:Rect>
-<a:LineColor>16744448</a:LineColor>
-<a:FillColor>16770222</a:FillColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 Arial,8,N
-DISPNAME 0 Arial,8,N
-CNTR 0 Arial,8,N
-Attributes 0 Arial,8,N
-ClassPrimaryAttribute 0 Arial,8,U
-Operations 0 Arial,8,N
-InnerClassifiers 0 Arial,8,N
-LABL 0 Arial,8,N</a:FontList>
-<a:BrushStyle>6</a:BrushStyle>
-<a:GradientFillMode>65</a:GradientFillMode>
-<a:GradientEndColor>16777215</a:GradientEndColor>
-<c:Object>
-<o:Class Ref="o36"/>
-</c:Object>
-</o:ClassSymbol>
-<o:ClassSymbol Id="o23">
-<a:CreationDate>1598872486</a:CreationDate>
-<a:ModificationDate>1598873813</a:ModificationDate>
-<a:IconMode>-1</a:IconMode>
-<a:Rect>((-1753,12133), (10785,15952))</a:Rect>
-<a:LineColor>16744448</a:LineColor>
-<a:FillColor>16770222</a:FillColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 Arial,8,N
-DISPNAME 0 Arial,8,N
-CNTR 0 Arial,8,N
-Attributes 0 Arial,8,N
-ClassPrimaryAttribute 0 Arial,8,U
-Operations 0 Arial,8,N
-InnerClassifiers 0 Arial,8,N
-LABL 0 Arial,8,N</a:FontList>
-<a:BrushStyle>6</a:BrushStyle>
-<a:GradientFillMode>65</a:GradientFillMode>
-<a:GradientEndColor>16777215</a:GradientEndColor>
-<c:Object>
-<o:Class Ref="o37"/>
-</c:Object>
-</o:ClassSymbol>
-<o:ClassSymbol Id="o26">
-<a:CreationDate>1598873560</a:CreationDate>
-<a:ModificationDate>1598873632</a:ModificationDate>
-<a:IconMode>-1</a:IconMode>
-<a:Rect>((12567,-27015), (20649,-19299))</a:Rect>
-<a:LineColor>16744448</a:LineColor>
-<a:FillColor>16770222</a:FillColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 Arial,8,N
-DISPNAME 0 Arial,8,N
-CNTR 0 Arial,8,N
-Attributes 0 Arial,8,N
-ClassPrimaryAttribute 0 Arial,8,U
-Operations 0 Arial,8,N
-InnerClassifiers 0 Arial,8,N
-LABL 0 Arial,8,N</a:FontList>
-<a:BrushStyle>6</a:BrushStyle>
-<a:GradientFillMode>65</a:GradientFillMode>
-<a:GradientEndColor>16777215</a:GradientEndColor>
-<c:Object>
-<o:Class Ref="o38"/>
-</c:Object>
-</o:ClassSymbol>
-<o:ClassSymbol Id="o29">
-<a:CreationDate>1598873561</a:CreationDate>
-<a:ModificationDate>1598873823</a:ModificationDate>
-<a:IconMode>-1</a:IconMode>
-<a:Rect>((16196,14608), (25592,21350))</a:Rect>
-<a:LineColor>16744448</a:LineColor>
-<a:FillColor>16770222</a:FillColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>STRN 0 Arial,8,N
-DISPNAME 0 Arial,8,N
-CNTR 0 Arial,8,N
-Attributes 0 Arial,8,N
-ClassPrimaryAttribute 0 Arial,8,U
-Operations 0 Arial,8,N
-InnerClassifiers 0 Arial,8,N
-LABL 0 Arial,8,N</a:FontList>
-<a:BrushStyle>6</a:BrushStyle>
-<a:GradientFillMode>65</a:GradientFillMode>
-<a:GradientEndColor>16777215</a:GradientEndColor>
-<c:Object>
-<o:Class Ref="o39"/>
-</c:Object>
-</o:ClassSymbol>
 </c:Symbols>
 </o:ClassDiagram>
 </c:ClassDiagrams>
@@ -2880,17 +2810,17 @@ LABL 0 Arial,8,N</a:FontList>
 <o:ClassDiagram Ref="o5"/>
 </c:DefaultDiagram>
 <c:Classes>
-<o:Class Id="o31">
+<o:Class Id="o27">
 <a:ObjectID>13F910C2-A48D-422F-AF96-E747552C5C3A</a:ObjectID>
 <a:Name>Users</a:Name>
 <a:Code>Users</a:Code>
 <a:CreationDate>1593969999</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1598872134</a:ModificationDate>
+<a:ModificationDate>1593973739</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o40">
+<o:Attribute Id="o34">
 <a:ObjectID>1AC84D04-AF75-4AD1-8617-E6BC49D98254</a:ObjectID>
 <a:Name>user_id</a:Name>
 <a:Code>user_id</a:Code>
@@ -2901,7 +2831,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>int</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o41">
+<o:Attribute Id="o35">
 <a:ObjectID>6EE4BCE0-F50A-494A-8E17-151F48BEDB02</a:ObjectID>
 <a:Name>user_name</a:Name>
 <a:Code>user_name</a:Code>
@@ -2912,7 +2842,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>char</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o42">
+<o:Attribute Id="o36">
 <a:ObjectID>EC3288C7-E12A-4B37-A6D0-9A7C4F297C7C</a:ObjectID>
 <a:Name>user_email</a:Name>
 <a:Code>user_email</a:Code>
@@ -2923,7 +2853,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>char</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o43">
+<o:Attribute Id="o37">
 <a:ObjectID>671E61BC-0A81-4C06-8F7C-4C0F1C7EAC4E</a:ObjectID>
 <a:Name>user_password</a:Name>
 <a:Code>user_password</a:Code>
@@ -2934,7 +2864,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>char</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o44">
+<o:Attribute Id="o38">
 <a:ObjectID>17701CC0-6B1C-463C-95D9-DB9A27DA92D3</a:ObjectID>
 <a:Name>user_picture</a:Name>
 <a:Code>user_picture</a:Code>
@@ -2945,7 +2875,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>char</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o45">
+<o:Attribute Id="o39">
 <a:ObjectID>32ED3024-A9DB-47C8-964C-77119BAB91C2</a:ObjectID>
 <a:Name>user_status</a:Name>
 <a:Code>user_status</a:Code>
@@ -2958,7 +2888,7 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Attribute>
 </c:Attributes>
 <c:Operations>
-<o:Operation Id="o46">
+<o:Operation Id="o40">
 <a:ObjectID>22660B6A-DADF-4CE3-A380-7B94385DD471</a:ObjectID>
 <a:Name>login</a:Name>
 <a:Code>login</a:Code>
@@ -2969,7 +2899,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ReturnType>boolean</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
-<o:Operation Id="o47">
+<o:Operation Id="o41">
 <a:ObjectID>1FF392ED-DC10-4B4F-8A5B-86DBB377BEFA</a:ObjectID>
 <a:Name>signup</a:Name>
 <a:Code>signup</a:Code>
@@ -2980,42 +2910,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ReturnType>boolean</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
-<o:Operation Id="o48">
-<a:ObjectID>F4B378C7-48E5-4A29-A93B-A1A980C20CDB</a:ObjectID>
-<a:Name>make_appointment</a:Name>
-<a:Code>make_appointment</a:Code>
-<a:CreationDate>1598871990</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598872073</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:ReturnType>char</a:ReturnType>
-<a:TemplateBody>%DefaultBody%</a:TemplateBody>
-</o:Operation>
-<o:Operation Id="o49">
-<a:ObjectID>E23936F8-06F3-428F-B26D-A0FE71EAEAEA</a:ObjectID>
-<a:Name>consult_doctors</a:Name>
-<a:Code>consult_doctors</a:Code>
-<a:CreationDate>1598871990</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598872073</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:ReturnType>char</a:ReturnType>
-<a:TemplateBody>%DefaultBody%</a:TemplateBody>
-</o:Operation>
-<o:Operation Id="o50">
-<a:ObjectID>8E15A8FF-8834-4294-BEE1-570106CEA4D3</a:ObjectID>
-<a:Name>update_profile</a:Name>
-<a:Code>update_profile</a:Code>
-<a:CreationDate>1598871990</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598872073</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:ReturnType>char</a:ReturnType>
-<a:TemplateBody>%DefaultBody%</a:TemplateBody>
-</o:Operation>
 </c:Operations>
 <c:Identifiers>
-<o:Identifier Id="o51">
+<o:Identifier Id="o42">
 <a:ObjectID>826C236A-002F-417B-9642-3E3830932867</a:ObjectID>
 <a:Name>Identifiant_1</a:Name>
 <a:Code>Identifiant_1</a:Code>
@@ -3024,93 +2921,105 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1593970592</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <c:Identifier.Attributes>
-<o:Attribute Ref="o40"/>
+<o:Attribute Ref="o34"/>
 </c:Identifier.Attributes>
 </o:Identifier>
 </c:Identifiers>
 <c:PrimaryIdentifier>
-<o:Identifier Ref="o51"/>
+<o:Identifier Ref="o42"/>
 </c:PrimaryIdentifier>
 </o:Class>
-<o:Class Id="o32">
-<a:ObjectID>222AE573-B837-41A5-8253-B88F69DB869E</a:ObjectID>
-<a:Name>admins</a:Name>
-<a:Code>admins</a:Code>
+<o:Class Id="o28">
+<a:ObjectID>042BBCCB-652A-4A42-9532-E3434A94B90B</a:ObjectID>
+<a:Name>Doctor_profile</a:Name>
+<a:Code>Doctor_profile</a:Code>
 <a:CreationDate>1593970001</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1598873785</a:ModificationDate>
+<a:ModificationDate>1593973728</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o52">
-<a:ObjectID>E86068EA-66E6-4BEA-BA05-6C8B2DEAD8E4</a:ObjectID>
-<a:Name>admin_id</a:Name>
-<a:Code>admin_id</a:Code>
-<a:CreationDate>1598872267</a:CreationDate>
+<o:Attribute Id="o43">
+<a:ObjectID>16D9EDEB-AF02-423A-A0E8-9D99D09A3195</a:ObjectID>
+<a:Name>user_id</a:Name>
+<a:Code>user_id</a:Code>
+<a:CreationDate>1593970951</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1598872406</a:ModificationDate>
+<a:ModificationDate>1593971016</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:DataType>int</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o53">
-<a:ObjectID>99CBB200-A56F-45E2-9350-D8CEAD481C78</a:ObjectID>
-<a:Name>admin_name</a:Name>
-<a:Code>admin_name</a:Code>
-<a:CreationDate>1598872267</a:CreationDate>
+<o:Attribute Id="o44">
+<a:ObjectID>8ED6EE53-C76F-4BD3-9FD1-48AEDB9DAB28</a:ObjectID>
+<a:Name>user_name</a:Name>
+<a:Code>user_name</a:Code>
+<a:CreationDate>1593970951</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1598872406</a:ModificationDate>
+<a:ModificationDate>1593971016</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:DataType>char</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o54">
-<a:ObjectID>DDB5FFA6-80E1-4FEC-A18B-C40C2164D08D</a:ObjectID>
-<a:Name>admin_email</a:Name>
-<a:Code>admin_email</a:Code>
-<a:CreationDate>1598872267</a:CreationDate>
+<o:Attribute Id="o45">
+<a:ObjectID>F17859D5-2C6E-4D90-A794-D07DF741FB2D</a:ObjectID>
+<a:Name>user_email</a:Name>
+<a:Code>user_email</a:Code>
+<a:CreationDate>1593970951</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1598872406</a:ModificationDate>
+<a:ModificationDate>1593971016</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:DataType>char</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o55">
-<a:ObjectID>66459430-F8DB-4377-9389-C1A773EDDD53</a:ObjectID>
-<a:Name>admin_password</a:Name>
-<a:Code>admin_password</a:Code>
-<a:CreationDate>1598872267</a:CreationDate>
+<o:Attribute Id="o46">
+<a:ObjectID>E970F7F7-262F-4AC2-99F1-25C070B086D0</a:ObjectID>
+<a:Name>user_status</a:Name>
+<a:Code>user_status</a:Code>
+<a:CreationDate>1593970951</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1598872406</a:ModificationDate>
+<a:ModificationDate>1593971016</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:DataType>char</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o56">
-<a:ObjectID>985AC6CF-CE2D-4539-95A4-12085C277875</a:ObjectID>
-<a:Name>admin_picture</a:Name>
-<a:Code>admin_picture</a:Code>
-<a:CreationDate>1598872267</a:CreationDate>
+</c:Attributes>
+</o:Class>
+<o:Class Id="o29">
+<a:ObjectID>222AE573-B837-41A5-8253-B88F69DB869E</a:ObjectID>
+<a:Name>Doctors</a:Name>
+<a:Code>Doctors</a:Code>
+<a:CreationDate>1593970001</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1598872406</a:ModificationDate>
+<a:ModificationDate>1593973734</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
-<a:DataType>char</a:DataType>
+<a:UseParentNamespace>0</a:UseParentNamespace>
+<c:Attributes>
+<o:Attribute Id="o47">
+<a:ObjectID>B381F534-5841-40FC-991C-975B1FE69195</a:ObjectID>
+<a:Name>user_id</a:Name>
+<a:Code>user_id</a:Code>
+<a:CreationDate>1593970795</a:CreationDate>
+<a:Creator>admin</a:Creator>
+<a:ModificationDate>1593970901</a:ModificationDate>
+<a:Modifier>admin</a:Modifier>
+<a:DataType>int</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o57">
-<a:ObjectID>16EECC9B-29DF-4116-9A0D-E8A6B5791515</a:ObjectID>
-<a:Name>admin_status</a:Name>
-<a:Code>admin_status</a:Code>
-<a:CreationDate>1598872267</a:CreationDate>
+<o:Attribute Id="o48">
+<a:ObjectID>DBC80A79-785A-42E6-B559-48AB2FAA5534</a:ObjectID>
+<a:Name>user_status</a:Name>
+<a:Code>user_status</a:Code>
+<a:CreationDate>1593970795</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1598872406</a:ModificationDate>
+<a:ModificationDate>1593970901</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:DataType>char</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
 </c:Attributes>
 <c:Operations>
-<o:Operation Id="o58">
+<o:Operation Id="o49">
 <a:ObjectID>32178A8E-086D-4EB0-8B7D-8435A0464A41</a:ObjectID>
 <a:Name>add_admin</a:Name>
 <a:Code>add_admin</a:Code>
@@ -3121,7 +3030,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ReturnType>char</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
-<o:Operation Id="o59">
+<o:Operation Id="o50">
 <a:ObjectID>B7918235-A9AC-4904-BDDE-9374B0474AE6</a:ObjectID>
 <a:Name>appointment_process</a:Name>
 <a:Code>appointment_process</a:Code>
@@ -3132,7 +3041,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ReturnType>char</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
-<o:Operation Id="o60">
+<o:Operation Id="o51">
 <a:ObjectID>9834BF63-F2E2-49CA-A28D-8359177BA62D</a:ObjectID>
 <a:Name>message_consult</a:Name>
 <a:Code>message_consult</a:Code>
@@ -3143,41 +3052,77 @@ LABL 0 Arial,8,N</a:FontList>
 <a:ReturnType>char</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
-<o:Operation Id="o61">
-<a:ObjectID>09533E50-F6FC-427C-9B54-DE3D6FD324F4</a:ObjectID>
-<a:Name>update_profile</a:Name>
-<a:Code>update_profile</a:Code>
-<a:CreationDate>1598871554</a:CreationDate>
+</c:Operations>
+</o:Class>
+<o:Class Id="o30">
+<a:ObjectID>2D0E66CF-F2BE-4726-A824-78F578F66BB7</a:ObjectID>
+<a:Name>Patient</a:Name>
+<a:Code>Patient</a:Code>
+<a:CreationDate>1593970003</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1598871582</a:ModificationDate>
+<a:ModificationDate>1593973746</a:ModificationDate>
+<a:Modifier>admin</a:Modifier>
+<a:UseParentNamespace>0</a:UseParentNamespace>
+<c:Attributes>
+<o:Attribute Id="o52">
+<a:ObjectID>12FA2039-BA2D-40D4-B7A7-BD5E0CB94C56</a:ObjectID>
+<a:Name>user_id</a:Name>
+<a:Code>user_id</a:Code>
+<a:CreationDate>1593970908</a:CreationDate>
+<a:Creator>admin</a:Creator>
+<a:ModificationDate>1593970942</a:ModificationDate>
+<a:Modifier>admin</a:Modifier>
+<a:DataType>int</a:DataType>
+<a:Attribute.Visibility>-</a:Attribute.Visibility>
+</o:Attribute>
+<o:Attribute Id="o53">
+<a:ObjectID>065126EC-13AD-4369-A27B-3496FB4B19FF</a:ObjectID>
+<a:Name>user_status</a:Name>
+<a:Code>user_status</a:Code>
+<a:CreationDate>1593970908</a:CreationDate>
+<a:Creator>admin</a:Creator>
+<a:ModificationDate>1593970942</a:ModificationDate>
+<a:Modifier>admin</a:Modifier>
+<a:DataType>char</a:DataType>
+<a:Attribute.Visibility>-</a:Attribute.Visibility>
+</o:Attribute>
+</c:Attributes>
+<c:Operations>
+<o:Operation Id="o54">
+<a:ObjectID>DE3C94B2-8C79-475B-ACED-C663B50F8AF1</a:ObjectID>
+<a:Name>make_appointment</a:Name>
+<a:Code>make_appointment</a:Code>
+<a:CreationDate>1593972541</a:CreationDate>
+<a:Creator>admin</a:Creator>
+<a:ModificationDate>1593972666</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:ReturnType>char</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
-<o:Operation Id="o62">
-<a:ObjectID>2743EE18-2293-425B-AF6F-F7B5D04BC49D</a:ObjectID>
-<a:Name>delete_admin</a:Name>
-<a:Code>delete_admin</a:Code>
-<a:CreationDate>1598871662</a:CreationDate>
+<o:Operation Id="o55">
+<a:ObjectID>07EFABC3-2903-45BE-8808-ACB1CB39F290</a:ObjectID>
+<a:Name>consult_doctors</a:Name>
+<a:Code>consult_doctors</a:Code>
+<a:CreationDate>1593972541</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1598871685</a:ModificationDate>
+<a:ModificationDate>1593972666</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:ReturnType>char</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
 </c:Operations>
 </o:Class>
-<o:Class Id="o33">
+<o:Class Id="o31">
 <a:ObjectID>4E02B4D5-4010-4D6D-899F-5BB6B2B72EF3</a:ObjectID>
 <a:Name>Messages</a:Name>
 <a:Code>Messages</a:Code>
 <a:CreationDate>1593970006</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1598872112</a:ModificationDate>
+<a:ModificationDate>1593973717</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o63">
+<o:Attribute Id="o56">
 <a:ObjectID>DD5020F7-FB9E-42E3-9953-340E85AE51C6</a:ObjectID>
 <a:Name>user_id</a:Name>
 <a:Code>user_id</a:Code>
@@ -3188,7 +3133,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>int</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o64">
+<o:Attribute Id="o57">
 <a:ObjectID>D4194A44-89C8-4995-BE19-B5DE1988AB6B</a:ObjectID>
 <a:Name>user_status</a:Name>
 <a:Code>user_status</a:Code>
@@ -3199,96 +3144,30 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>char</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o65">
+<o:Attribute Id="o58">
 <a:ObjectID>7CEBED70-D101-40C4-B2B2-2FEE765A3924</a:ObjectID>
-<a:Name>message_id</a:Name>
-<a:Code>message_id</a:Code>
-<a:CreationDate>1593971244</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598871934</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:DataType>int</a:DataType>
-<a:Attribute.Visibility>-</a:Attribute.Visibility>
-</o:Attribute>
-<o:Attribute Id="o66">
-<a:ObjectID>47A7BE8C-3A62-40A1-8F8A-BB1A8BDCDDBB</a:ObjectID>
-<a:Name>sender_id</a:Name>
-<a:Code>sender_id</a:Code>
-<a:CreationDate>1598871692</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598871934</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:DataType>int</a:DataType>
-<a:Attribute.Visibility>-</a:Attribute.Visibility>
-</o:Attribute>
-<o:Attribute Id="o67">
-<a:ObjectID>3B04414E-EC89-4784-B166-988AD53C15F6</a:ObjectID>
-<a:Name>sender_name</a:Name>
-<a:Code>sender_name</a:Code>
-<a:CreationDate>1598871692</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598871934</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:DataType>char</a:DataType>
-<a:Attribute.Visibility>-</a:Attribute.Visibility>
-</o:Attribute>
-<o:Attribute Id="o68">
-<a:ObjectID>F9F2A2CE-4B61-4209-9D1F-90AC99DC9F6B</a:ObjectID>
-<a:Name>reciever_id</a:Name>
-<a:Code>reciever_id</a:Code>
-<a:CreationDate>1598871692</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598871934</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:DataType>int</a:DataType>
-<a:Attribute.Visibility>-</a:Attribute.Visibility>
-</o:Attribute>
-<o:Attribute Id="o69">
-<a:ObjectID>886AD987-D4F9-4289-AA38-E0EB94A1FE6A</a:ObjectID>
-<a:Name>reciever_name</a:Name>
-<a:Code>reciever_name</a:Code>
-<a:CreationDate>1598871692</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598871934</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:DataType>char</a:DataType>
-<a:Attribute.Visibility>-</a:Attribute.Visibility>
-</o:Attribute>
-<o:Attribute Id="o70">
-<a:ObjectID>6D571918-5B1F-4483-AF7F-FAE414F7F71D</a:ObjectID>
 <a:Name>message</a:Name>
 <a:Code>message</a:Code>
-<a:CreationDate>1598871692</a:CreationDate>
+<a:CreationDate>1593971244</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1598871934</a:ModificationDate>
+<a:ModificationDate>1593971274</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:DataType>char</a:DataType>
-<a:Attribute.Visibility>-</a:Attribute.Visibility>
-</o:Attribute>
-<o:Attribute Id="o71">
-<a:ObjectID>66BBD9B6-16F1-4D7D-80F8-92487B15EF84</a:ObjectID>
-<a:Name>date</a:Name>
-<a:Code>date</a:Code>
-<a:CreationDate>1598871692</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598871934</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:DataType>date</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
 </c:Attributes>
 </o:Class>
-<o:Class Id="o34">
+<o:Class Id="o32">
 <a:ObjectID>97255ADE-8B3F-4922-909C-2A378D0CAF86</a:ObjectID>
 <a:Name>Patient_profile</a:Name>
 <a:Code>Patient_profile</a:Code>
 <a:CreationDate>1593970006</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1598873963</a:ModificationDate>
+<a:ModificationDate>1593973753</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o72">
+<o:Attribute Id="o59">
 <a:ObjectID>B9A8C031-16B6-4A71-8642-618EDB474C5C</a:ObjectID>
 <a:Name>user_id</a:Name>
 <a:Code>user_id</a:Code>
@@ -3299,7 +3178,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>int</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o73">
+<o:Attribute Id="o60">
 <a:ObjectID>03BE7011-8AD4-4CEC-AE21-81C943195ED6</a:ObjectID>
 <a:Name>user_name</a:Name>
 <a:Code>user_name</a:Code>
@@ -3310,7 +3189,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>char</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o74">
+<o:Attribute Id="o61">
 <a:ObjectID>618E1160-412E-442D-B159-7FF4DEBAA950</a:ObjectID>
 <a:Name>user_email</a:Name>
 <a:Code>user_email</a:Code>
@@ -3321,7 +3200,40 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>char</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o75">
+<o:Attribute Id="o62">
+<a:ObjectID>303701B9-E818-412A-838A-AB228F7D6C0C</a:ObjectID>
+<a:Name>question1</a:Name>
+<a:Code>question1</a:Code>
+<a:CreationDate>1593971030</a:CreationDate>
+<a:Creator>admin</a:Creator>
+<a:ModificationDate>1593971145</a:ModificationDate>
+<a:Modifier>admin</a:Modifier>
+<a:DataType>char</a:DataType>
+<a:Attribute.Visibility>-</a:Attribute.Visibility>
+</o:Attribute>
+<o:Attribute Id="o63">
+<a:ObjectID>5FC5B267-1946-45DA-8C44-638A9966540F</a:ObjectID>
+<a:Name>question2</a:Name>
+<a:Code>question2</a:Code>
+<a:CreationDate>1593971030</a:CreationDate>
+<a:Creator>admin</a:Creator>
+<a:ModificationDate>1593971145</a:ModificationDate>
+<a:Modifier>admin</a:Modifier>
+<a:DataType>char</a:DataType>
+<a:Attribute.Visibility>-</a:Attribute.Visibility>
+</o:Attribute>
+<o:Attribute Id="o64">
+<a:ObjectID>F767790D-1CD1-4E9F-B0A4-BE2CC8799E35</a:ObjectID>
+<a:Name>question3</a:Name>
+<a:Code>question3</a:Code>
+<a:CreationDate>1593971030</a:CreationDate>
+<a:Creator>admin</a:Creator>
+<a:ModificationDate>1593971145</a:ModificationDate>
+<a:Modifier>admin</a:Modifier>
+<a:DataType>char</a:DataType>
+<a:Attribute.Visibility>-</a:Attribute.Visibility>
+</o:Attribute>
+<o:Attribute Id="o65">
 <a:ObjectID>50D7E389-293E-47B1-B987-7573F50AF24C</a:ObjectID>
 <a:Name>user_status</a:Name>
 <a:Code>user_status</a:Code>
@@ -3333,53 +3245,18 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
 </c:Attributes>
-<c:Operations>
-<o:Operation Id="o76">
-<a:ObjectID>738107FD-42B4-45A7-A560-895C5A6E01A1</a:ObjectID>
-<a:Name>update_profile</a:Name>
-<a:Code>update_profile</a:Code>
-<a:CreationDate>1598873342</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598873443</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:ReturnType>char</a:ReturnType>
-<a:TemplateBody>%DefaultBody%</a:TemplateBody>
-</o:Operation>
-<o:Operation Id="o77">
-<a:ObjectID>C499CF64-F3B5-4095-94A4-CDF9C4D542E5</a:ObjectID>
-<a:Name>consult_doctor</a:Name>
-<a:Code>consult_doctor</a:Code>
-<a:CreationDate>1598873342</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598873443</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:ReturnType>char</a:ReturnType>
-<a:TemplateBody>%DefaultBody%</a:TemplateBody>
-</o:Operation>
-<o:Operation Id="o78">
-<a:ObjectID>7339D7CB-E989-41D6-852D-642CF920378A</a:ObjectID>
-<a:Name>view_appointement</a:Name>
-<a:Code>view_appointement</a:Code>
-<a:CreationDate>1598873342</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598873443</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:ReturnType>char</a:ReturnType>
-<a:TemplateBody>%DefaultBody%</a:TemplateBody>
-</o:Operation>
-</c:Operations>
 </o:Class>
-<o:Class Id="o35">
+<o:Class Id="o33">
 <a:ObjectID>91E838F4-BAE2-4A65-9F26-759EC3EF7CA0</a:ObjectID>
 <a:Name>Appointment</a:Name>
 <a:Code>Appointment</a:Code>
 <a:CreationDate>1593970012</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1598872124</a:ModificationDate>
+<a:ModificationDate>1593973667</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o79">
+<o:Attribute Id="o66">
 <a:ObjectID>ECD13937-1237-4B8E-A024-14DEE532142B</a:ObjectID>
 <a:Name>user_id</a:Name>
 <a:Code>user_id</a:Code>
@@ -3390,7 +3267,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>int</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o80">
+<o:Attribute Id="o67">
 <a:ObjectID>9A7D8131-B6C8-4BCF-80ED-86E97575DA2E</a:ObjectID>
 <a:Name>user_name</a:Name>
 <a:Code>user_name</a:Code>
@@ -3401,7 +3278,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>char</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o81">
+<o:Attribute Id="o68">
 <a:ObjectID>02BBA35E-019F-413C-8C30-DB53C0E637FA</a:ObjectID>
 <a:Name>user_email</a:Name>
 <a:Code>user_email</a:Code>
@@ -3412,7 +3289,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>char</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o82">
+<o:Attribute Id="o69">
 <a:ObjectID>FF23DFB9-F607-4283-A3ED-30D7F70C1A5B</a:ObjectID>
 <a:Name>time</a:Name>
 <a:Code>time</a:Code>
@@ -3423,7 +3300,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>Date</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o83">
+<o:Attribute Id="o70">
 <a:ObjectID>B268A6BD-CBCE-4B3F-8844-6F54F58A07CE</a:ObjectID>
 <a:Name>message</a:Name>
 <a:Code>message</a:Code>
@@ -3434,7 +3311,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:DataType>char</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o84">
+<o:Attribute Id="o71">
 <a:ObjectID>E67875DA-005D-40F8-8D08-793AD7873E8A</a:ObjectID>
 <a:Name>service_type</a:Name>
 <a:Code>service_type</a:Code>
@@ -3447,321 +3324,63 @@ LABL 0 Arial,8,N</a:FontList>
 </o:Attribute>
 </c:Attributes>
 </o:Class>
-<o:Class Id="o36">
-<a:ObjectID>F1C09563-0DE6-424B-B554-E6F0F1565B9E</a:ObjectID>
-<a:Name>doctor</a:Name>
-<a:Code>doctor</a:Code>
-<a:CreationDate>1598872485</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598873932</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:UseParentNamespace>0</a:UseParentNamespace>
-<c:Attributes>
-<o:Attribute Id="o85">
-<a:ObjectID>B4D6C24C-7594-49B7-9DCA-8EAB6D929F8E</a:ObjectID>
-<a:Name>admin_status</a:Name>
-<a:Code>admin_status</a:Code>
-<a:CreationDate>1598872509</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598872740</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:DataType>char</a:DataType>
-<a:Attribute.Visibility>-</a:Attribute.Visibility>
-</o:Attribute>
-<o:Attribute Id="o86">
-<a:ObjectID>4095014A-9F11-4E52-9A93-3B12C1B69434</a:ObjectID>
-<a:Name>doctor_phone</a:Name>
-<a:Code>doctor_phone</a:Code>
-<a:CreationDate>1598872509</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598872740</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:DataType>int</a:DataType>
-<a:Attribute.Visibility>-</a:Attribute.Visibility>
-</o:Attribute>
-<o:Attribute Id="o87">
-<a:ObjectID>ADF0FE2B-4979-45FE-8CCF-FD078EA4CB15</a:ObjectID>
-<a:Name>doctor_linkedin</a:Name>
-<a:Code>doctor_linkedin</a:Code>
-<a:CreationDate>1598872509</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598872740</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:DataType>char</a:DataType>
-<a:Attribute.Visibility>-</a:Attribute.Visibility>
-</o:Attribute>
-<o:Attribute Id="o88">
-<a:ObjectID>83639E5E-905F-4EA6-961B-DEA33B066800</a:ObjectID>
-<a:Name>years_experience</a:Name>
-<a:Code>years_experience</a:Code>
-<a:CreationDate>1598872509</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598872740</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:DataType>int</a:DataType>
-<a:Attribute.Visibility>-</a:Attribute.Visibility>
-</o:Attribute>
-<o:Attribute Id="o89">
-<a:ObjectID>3E69CD9E-2137-432C-A48C-7A15300B7DBC</a:ObjectID>
-<a:Name>surgeries_namber</a:Name>
-<a:Code>surgeries_namber</a:Code>
-<a:CreationDate>1598872509</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598872740</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:DataType>int</a:DataType>
-<a:Attribute.Visibility>-</a:Attribute.Visibility>
-</o:Attribute>
-<o:Attribute Id="o90">
-<a:ObjectID>E52F77C2-5C99-41F4-AACE-002E3F6F74AA</a:ObjectID>
-<a:Name>doctor_specialisation</a:Name>
-<a:Code>doctor_specialisation</a:Code>
-<a:CreationDate>1598872509</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598872740</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:DataType>char</a:DataType>
-<a:Attribute.Visibility>-</a:Attribute.Visibility>
-</o:Attribute>
-<o:Attribute Id="o91">
-<a:ObjectID>BCA832F6-9F0F-4BF0-B172-1E8FE54A5CD3</a:ObjectID>
-<a:Name>about_doctor</a:Name>
-<a:Code>about_doctor</a:Code>
-<a:CreationDate>1598872509</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598872740</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:DataType>char</a:DataType>
-<a:Attribute.Visibility>-</a:Attribute.Visibility>
-</o:Attribute>
-</c:Attributes>
-<c:Operations>
-<o:Operation Id="o92">
-<a:ObjectID>7F02477C-3E40-4C26-B481-CFBE53EC6394</a:ObjectID>
-<a:Name>add_admin</a:Name>
-<a:Code>add_admin</a:Code>
-<a:CreationDate>1598872741</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598874148</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:ReturnType>void</a:ReturnType>
-<a:TemplateBody>%DefaultBody%</a:TemplateBody>
-</o:Operation>
-<o:Operation Id="o93">
-<a:ObjectID>F6893C10-AD50-48FB-8922-BC37597C8E55</a:ObjectID>
-<a:Name>message_consult</a:Name>
-<a:Code>message_consult</a:Code>
-<a:CreationDate>1598872741</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598874148</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:ReturnType>void</a:ReturnType>
-<a:TemplateBody>%DefaultBody%</a:TemplateBody>
-</o:Operation>
-<o:Operation Id="o94">
-<a:ObjectID>2723343F-F1A6-4FAE-A257-E9AB6D49ECD0</a:ObjectID>
-<a:Name>delete_admin</a:Name>
-<a:Code>delete_admin</a:Code>
-<a:CreationDate>1598872741</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598874148</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:ReturnType>void</a:ReturnType>
-<a:TemplateBody>%DefaultBody%</a:TemplateBody>
-</o:Operation>
-<o:Operation Id="o95">
-<a:ObjectID>33AE146E-95A1-46C0-B6E6-1E98420E6F91</a:ObjectID>
-<a:Name>medical_note</a:Name>
-<a:Code>medical_note</a:Code>
-<a:CreationDate>1598873914</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598874148</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:ReturnType>void</a:ReturnType>
-<a:TemplateBody>%DefaultBody%</a:TemplateBody>
-</o:Operation>
-</c:Operations>
-</o:Class>
-<o:Class Id="o37">
-<a:ObjectID>650CDE02-44E5-474E-9FFF-095038C4FB9B</a:ObjectID>
-<a:Name>secretaire</a:Name>
-<a:Code>secretaire</a:Code>
-<a:CreationDate>1598872486</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598873296</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:UseParentNamespace>0</a:UseParentNamespace>
-<c:Attributes>
-<o:Attribute Id="o96">
-<a:ObjectID>1F888579-064C-46CA-8395-1DFCFCF53E04</a:ObjectID>
-<a:Name>admin_status</a:Name>
-<a:Code>admin_status</a:Code>
-<a:CreationDate>1598872793</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598872920</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:DataType>int</a:DataType>
-<a:Attribute.Visibility>-</a:Attribute.Visibility>
-</o:Attribute>
-</c:Attributes>
-<c:Operations>
-<o:Operation Id="o97">
-<a:ObjectID>FFC9A218-022B-43BA-9023-0D11145DB185</a:ObjectID>
-<a:Name>appointment_process</a:Name>
-<a:Code>appointment_process</a:Code>
-<a:CreationDate>1598872793</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598872920</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:ReturnType>char</a:ReturnType>
-<a:TemplateBody>%DefaultBody%</a:TemplateBody>
-</o:Operation>
-</c:Operations>
-</o:Class>
-<o:Class Id="o38">
-<a:ObjectID>7ECEE3EF-E87B-44C3-A6FD-75D9F754D8FF</a:ObjectID>
-<a:Name>contact_message</a:Name>
-<a:Code>contact_message</a:Code>
-<a:CreationDate>1598873560</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598873963</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:UseParentNamespace>0</a:UseParentNamespace>
-<c:Attributes>
-<o:Attribute Id="o98">
-<a:ObjectID>9EBFD301-B96C-4E97-8DAC-34DD4B85BB79</a:ObjectID>
-<a:Name>contact_id</a:Name>
-<a:Code>contact_id</a:Code>
-<a:CreationDate>1598873566</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598873630</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:DataType>int</a:DataType>
-<a:Attribute.Visibility>-</a:Attribute.Visibility>
-</o:Attribute>
-<o:Attribute Id="o99">
-<a:ObjectID>3A129BB1-C1FF-4BE1-9B62-A880569389F7</a:ObjectID>
-<a:Name>user_id</a:Name>
-<a:Code>user_id</a:Code>
-<a:CreationDate>1598873566</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598873630</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:DataType>int</a:DataType>
-<a:Attribute.Visibility>-</a:Attribute.Visibility>
-</o:Attribute>
-<o:Attribute Id="o100">
-<a:ObjectID>726F50D6-921E-4704-B52A-7324BE0D3646</a:ObjectID>
-<a:Name>first_name</a:Name>
-<a:Code>first_name</a:Code>
-<a:CreationDate>1598873566</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598873630</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:DataType>char</a:DataType>
-<a:Attribute.Visibility>-</a:Attribute.Visibility>
-</o:Attribute>
-<o:Attribute Id="o101">
-<a:ObjectID>2359D4F6-B361-491A-8FCC-055CDF2B5B90</a:ObjectID>
-<a:Name>email</a:Name>
-<a:Code>email</a:Code>
-<a:CreationDate>1598873566</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598873630</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:DataType>char</a:DataType>
-<a:Attribute.Visibility>-</a:Attribute.Visibility>
-</o:Attribute>
-<o:Attribute Id="o102">
-<a:ObjectID>30B4D215-1D46-4871-BDEC-CB7C8199B1A4</a:ObjectID>
-<a:Name>comment</a:Name>
-<a:Code>comment</a:Code>
-<a:CreationDate>1598873566</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598873630</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:DataType>char</a:DataType>
-<a:Attribute.Visibility>-</a:Attribute.Visibility>
-</o:Attribute>
-</c:Attributes>
-</o:Class>
-<o:Class Id="o39">
-<a:ObjectID>2374EB36-8185-4984-ACFB-8660A4B40AB4</a:ObjectID>
-<a:Name>medical_note</a:Name>
-<a:Code>medical_note</a:Code>
-<a:CreationDate>1598873561</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598873904</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:UseParentNamespace>0</a:UseParentNamespace>
-<c:Attributes>
-<o:Attribute Id="o103">
-<a:ObjectID>A0E9F12E-31C4-4F40-BDBF-9F7BF656AADF</a:ObjectID>
-<a:Name>note_id</a:Name>
-<a:Code>note_id</a:Code>
-<a:CreationDate>1598873634</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598873714</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:DataType>int</a:DataType>
-<a:Attribute.Visibility>-</a:Attribute.Visibility>
-</o:Attribute>
-<o:Attribute Id="o104">
-<a:ObjectID>4DA74D33-96DA-4AE2-8AAE-2B8D36179797</a:ObjectID>
-<a:Name>patient_id</a:Name>
-<a:Code>patient_id</a:Code>
-<a:CreationDate>1598873634</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598873714</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:DataType>int</a:DataType>
-<a:Attribute.Visibility>-</a:Attribute.Visibility>
-</o:Attribute>
-<o:Attribute Id="o105">
-<a:ObjectID>466452C9-F50A-4FE4-8032-31023F37A2C2</a:ObjectID>
-<a:Name>patient_name</a:Name>
-<a:Code>patient_name</a:Code>
-<a:CreationDate>1598873634</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598873714</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:DataType>char</a:DataType>
-<a:Attribute.Visibility>-</a:Attribute.Visibility>
-</o:Attribute>
-<o:Attribute Id="o106">
-<a:ObjectID>89EF7A8D-5F72-4D3D-A72A-61F9ED2ECE58</a:ObjectID>
-<a:Name>note</a:Name>
-<a:Code>note</a:Code>
-<a:CreationDate>1598873634</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598873714</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:DataType>char</a:DataType>
-<a:Attribute.Visibility>-</a:Attribute.Visibility>
-</o:Attribute>
-</c:Attributes>
-</o:Class>
 </c:Classes>
 <c:Associations>
 <o:Association Id="o9">
+<a:ObjectID>D2576B83-52D3-438B-B04A-A54ECC3B44A8</a:ObjectID>
+<a:Name>Association_1</a:Name>
+<a:Code>Association_1</a:Code>
+<a:CreationDate>1593971338</a:CreationDate>
+<a:Creator>admin</a:Creator>
+<a:ModificationDate>1593972193</a:ModificationDate>
+<a:Modifier>admin</a:Modifier>
+<a:RoleAIndicator>A</a:RoleAIndicator>
+<a:RoleAMultiplicity>1..*</a:RoleAMultiplicity>
+<a:RoleBMultiplicity>1..1</a:RoleBMultiplicity>
+<c:Object1>
+<o:Class Ref="o29"/>
+</c:Object1>
+<c:Object2>
+<o:Class Ref="o27"/>
+</c:Object2>
+</o:Association>
+<o:Association Id="o13">
 <a:ObjectID>90D67978-2793-4249-9BD7-D31052A0EC60</a:ObjectID>
 <a:Name>Association_3</a:Name>
 <a:Code>Association_3</a:Code>
 <a:CreationDate>1593971349</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1598872134</a:ModificationDate>
+<a:ModificationDate>1593972228</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:RoleAIndicator>A</a:RoleAIndicator>
 <a:RoleAMultiplicity>1..1</a:RoleAMultiplicity>
 <a:RoleBMultiplicity>1..1</a:RoleBMultiplicity>
 <c:Object1>
-<o:Class Ref="o34"/>
+<o:Class Ref="o32"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o31"/>
+<o:Class Ref="o30"/>
 </c:Object2>
 </o:Association>
-<o:Association Id="o13">
+<o:Association Id="o16">
+<a:ObjectID>038D078F-C19A-40F3-8FD9-FAE263CF32F7</a:ObjectID>
+<a:Name>Association_4</a:Name>
+<a:Code>Association_4</a:Code>
+<a:CreationDate>1593971350</a:CreationDate>
+<a:Creator>admin</a:Creator>
+<a:ModificationDate>1593972222</a:ModificationDate>
+<a:Modifier>admin</a:Modifier>
+<a:RoleAIndicator>A</a:RoleAIndicator>
+<a:RoleAMultiplicity>1..1</a:RoleAMultiplicity>
+<a:RoleBMultiplicity>1..1</a:RoleBMultiplicity>
+<c:Object1>
+<o:Class Ref="o28"/>
+</c:Object1>
+<c:Object2>
+<o:Class Ref="o29"/>
+</c:Object2>
+</o:Association>
+<o:Association Id="o19">
 <a:ObjectID>6E30C2E2-687A-4A81-9F3A-9C6443CF5B42</a:ObjectID>
 <a:Name>Association_8</a:Name>
 <a:Code>Association_8</a:Code>
@@ -3773,123 +3392,69 @@ LABL 0 Arial,8,N</a:FontList>
 <a:RoleAMultiplicity>0..*</a:RoleAMultiplicity>
 <a:RoleBMultiplicity>0..*</a:RoleBMultiplicity>
 <c:Object1>
-<o:Class Ref="o33"/>
+<o:Class Ref="o31"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o32"/>
+<o:Class Ref="o29"/>
 </c:Object2>
 </o:Association>
-<o:Association Id="o15">
+<o:Association Id="o21">
 <a:ObjectID>48160F87-77B4-4F16-BB72-254F9137AD7A</a:ObjectID>
 <a:Name>Association_6</a:Name>
 <a:Code>Association_6</a:Code>
 <a:CreationDate>1593971572</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1598872112</a:ModificationDate>
+<a:ModificationDate>1593973493</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:RoleAIndicator>A</a:RoleAIndicator>
 <a:RoleAMultiplicity>0..*</a:RoleAMultiplicity>
 <a:RoleBMultiplicity>0..*</a:RoleBMultiplicity>
 <c:Object1>
-<o:Class Ref="o33"/>
+<o:Class Ref="o31"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o31"/>
+<o:Class Ref="o30"/>
 </c:Object2>
 </o:Association>
-<o:Association Id="o18">
+<o:Association Id="o23">
+<a:ObjectID>2EA48833-D49F-48EF-A8E9-C48CE9BC8EB2</a:ObjectID>
+<a:Name>Association_7</a:Name>
+<a:Code>Association_7</a:Code>
+<a:CreationDate>1593971650</a:CreationDate>
+<a:Creator>admin</a:Creator>
+<a:ModificationDate>1593972201</a:ModificationDate>
+<a:Modifier>admin</a:Modifier>
+<a:RoleAIndicator>A</a:RoleAIndicator>
+<a:RoleAMultiplicity>1..*</a:RoleAMultiplicity>
+<a:RoleBMultiplicity>1..1</a:RoleBMultiplicity>
+<c:Object1>
+<o:Class Ref="o30"/>
+</c:Object1>
+<c:Object2>
+<o:Class Ref="o27"/>
+</c:Object2>
+</o:Association>
+<o:Association Id="o26">
 <a:ObjectID>611CD4AA-889C-4372-A57B-806964EFD4A4</a:ObjectID>
 <a:Name>Association_9</a:Name>
 <a:Code>Association_9</a:Code>
 <a:CreationDate>1593971660</a:CreationDate>
 <a:Creator>admin</a:Creator>
-<a:ModificationDate>1598872124</a:ModificationDate>
+<a:ModificationDate>1593973355</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
 <a:RoleAIndicator>A</a:RoleAIndicator>
 <a:RoleAMultiplicity>1..*</a:RoleAMultiplicity>
 <a:RoleBMultiplicity>1..*</a:RoleBMultiplicity>
 <c:Object1>
-<o:Class Ref="o35"/>
+<o:Class Ref="o33"/>
 </c:Object1>
 <c:Object2>
-<o:Class Ref="o31"/>
-</c:Object2>
-</o:Association>
-<o:Association Id="o21">
-<a:ObjectID>1604B28F-8C7E-4E5B-8858-871DE45A23B2</a:ObjectID>
-<a:Name>Association_5</a:Name>
-<a:Code>Association_5</a:Code>
-<a:CreationDate>1598873164</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598873309</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:RoleAIndicator>A</a:RoleAIndicator>
-<a:RoleAMultiplicity>1..1</a:RoleAMultiplicity>
-<a:RoleBMultiplicity>1..1</a:RoleBMultiplicity>
-<c:Object1>
-<o:Class Ref="o36"/>
-</c:Object1>
-<c:Object2>
-<o:Class Ref="o32"/>
-</c:Object2>
-</o:Association>
-<o:Association Id="o24">
-<a:ObjectID>D82E6D8E-159F-461A-82AF-5440F20EFF27</a:ObjectID>
-<a:Name>Association_7</a:Name>
-<a:Code>Association_7</a:Code>
-<a:CreationDate>1598873204</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598873296</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:RoleAIndicator>A</a:RoleAIndicator>
-<a:RoleAMultiplicity>1..1</a:RoleAMultiplicity>
-<a:RoleBMultiplicity>1..1</a:RoleBMultiplicity>
-<c:Object1>
-<o:Class Ref="o37"/>
-</c:Object1>
-<c:Object2>
-<o:Class Ref="o32"/>
-</c:Object2>
-</o:Association>
-<o:Association Id="o27">
-<a:ObjectID>4E2125AD-2931-4C49-90E7-2FAC5C5A7E7B</a:ObjectID>
-<a:Name>Association_10</a:Name>
-<a:Code>Association_10</a:Code>
-<a:CreationDate>1598873732</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598873963</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:RoleAIndicator>A</a:RoleAIndicator>
-<a:RoleAMultiplicity>0..1</a:RoleAMultiplicity>
-<a:RoleBMultiplicity>0..1</a:RoleBMultiplicity>
-<c:Object1>
-<o:Class Ref="o38"/>
-</c:Object1>
-<c:Object2>
-<o:Class Ref="o34"/>
-</c:Object2>
-</o:Association>
-<o:Association Id="o30">
-<a:ObjectID>7745E5A1-4A28-4FE3-BEA3-B0BB37F5B224</a:ObjectID>
-<a:Name>Association_11</a:Name>
-<a:Code>Association_11</a:Code>
-<a:CreationDate>1598873819</a:CreationDate>
-<a:Creator>admin</a:Creator>
-<a:ModificationDate>1598873904</a:ModificationDate>
-<a:Modifier>admin</a:Modifier>
-<a:RoleAIndicator>A</a:RoleAIndicator>
-<a:RoleAMultiplicity>1..*</a:RoleAMultiplicity>
-<a:RoleBMultiplicity>0..1</a:RoleBMultiplicity>
-<c:Object1>
-<o:Class Ref="o39"/>
-</c:Object1>
-<c:Object2>
-<o:Class Ref="o36"/>
+<o:Class Ref="o30"/>
 </c:Object2>
 </o:Association>
 </c:Associations>
 <c:TargetModels>
-<o:TargetModel Id="o107">
+<o:TargetModel Id="o72">
 <a:ObjectID>A5B84E58-4A75-4DD6-B314-F8E56C36B87C</a:ObjectID>
 <a:Name>Analyse</a:Name>
 <a:Code>Analysis</a:Code>
@@ -3904,7 +3469,7 @@ LABL 0 Arial,8,N</a:FontList>
 <o:Shortcut Ref="o4"/>
 </c:SessionShortcuts>
 </o:TargetModel>
-<o:TargetModel Id="o108">
+<o:TargetModel Id="o73">
 <a:ObjectID>20CE089B-8AF9-4298-B888-35296AF7A671</a:ObjectID>
 <a:Name>healthy</a:Name>
 <a:Code>HEALTHY</a:Code>
@@ -3912,7 +3477,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Creator>admin</a:Creator>
 <a:ModificationDate>1593976360</a:ModificationDate>
 <a:Modifier>admin</a:Modifier>
-<a:TargetModelURL>file:///C|/xampp/htdocs/file_rouge/assests/Diagrame uml/diagramme de classe/healthy.mpd</a:TargetModelURL>
+<a:TargetModelURL>file:///C|/xampp/htdocs/file_rouge/healthy.mpd</a:TargetModelURL>
 <a:TargetModelID>D41EF9E9-ABC3-41F6-A2EB-99E525B6251C</a:TargetModelID>
 <a:TargetModelClassID>CDE44E21-9669-11D1-9914-006097355D9B</a:TargetModelClassID>
 <c:SessionShortcuts>
