@@ -146,7 +146,7 @@
 
         </div>
 
-        <div class="col-md-5  ml-5">
+        <div class="col-md-5 ">
           <div class="media contact-info" style="position: relative;left: 26%;top: 19%;">
             <span class="contact-info__icon"><i class="ti-home"></i></span>
             <div class="media-body">
@@ -164,12 +164,13 @@
           <div class="media contact-info" style="position: relative;left: 26%;top: 19%;">
             <span class="contact-info__icon"><i class="ti-email"></i></span>
             <div class="media-body">
-              <h3>support@healthy.com</h3>
+              <h3>support@colorlib.com</h3>
               <p>Send us your query anytime!</p>
             </div>
           </div>
         </div>
-      </div>
+         </div>
+      <br><br>
     </div>
 
 
