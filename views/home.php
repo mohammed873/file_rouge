@@ -1,14 +1,6 @@
 <?php
   include_once ('../controllers/appointement.php');
   $conn = new Appointement();
-
-//   if (!isset($_SESSION['user_id'])) {
-//     header('Location: index.php');
-//   }
-if (isset($_SESSION['user_id'])) {
-    session_destroy();
-    header('location;index.php');
-  }
 ?>
 <!doctype html>
 <html lang="en">
