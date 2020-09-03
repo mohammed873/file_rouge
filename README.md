@@ -13,7 +13,7 @@ then rename that folder to "Healty"
 
 go to phpmyadmin and import the sql file which is located in a folder named "sql folder"
 
-after that you just open a new tap on google and past the following link http://localhost/done/views/index.php
+after that you just open a new tap on google and past the following link http://localhost/Healty/views/index.php
 
 for login a doctor  email = salwa@gmail.com password = salwa1998
 for login as secretaire  email = mohammed@gmail.com password mohammed1998
