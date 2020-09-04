@@ -1,4 +1,4 @@
-     //activating to slidetooglr function to show the update form
+     //activating to slidetoogle function to show the update form
      $('#update_profile').click(function(){
         $('.profile_update_form').slideToggle(1500);
     });
