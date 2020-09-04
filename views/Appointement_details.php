@@ -185,7 +185,7 @@ $conn = new Appointement();
     </div>
     <br><br>
 <!-- getting the details of each appointment ends-->
-<br><br>
+
             
             
 <!-- footer part start-->
