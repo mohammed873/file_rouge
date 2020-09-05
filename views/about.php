@@ -252,7 +252,7 @@
         </div>
     </section>
     <!--::regervation_part end::-->
-<br<<br>
+<br><br>
 
     <!-- footer part start-->
     <footer class="footer-area">
