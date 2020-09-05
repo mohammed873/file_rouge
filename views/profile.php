@@ -1,6 +1,19 @@
 <?php
    include ('../controllers/patient_details_controler.php');
    $conn = new Chat();
+
+   //destroying session while logging out
+  if (isset($_POST['logout'])) {
+    session_destroy();
+    header('location:index.php');
+    exit();
+  }
+
+  //checking if a url contains logging session
+  if (!isset($_SESSION['user_id'])) {
+    header('Location: index.php');
+  }
+
 ?>
 
 <!DOCTYPE html>
@@ -67,7 +80,11 @@
                                 </li>
                                 <br>
                                 <li>
-                                    <a class="btn btn-block bg-primary ml-4 text-white" href="index.php">log out</a>
+                                    <form method="post">
+                                        <button type="submit" name="logout" class="btn btn-block bg-primary ml-4 text-white">
+                                            log out
+                                        </button>
+                                    </form>
                                 </li>
                                 <br>
                             </ul>
@@ -265,7 +282,7 @@
           </table>
 </div>
  <!-- middle extra profile details ends-->   
-<br><br>
+
 
       <!-- footer part start-->
       <footer class="footer-area">
@@ -288,7 +305,27 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <!-- footer part end-->
 
+    <!-- jquery plugins here-->
 
+    <script src="../assests/js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="../assests/js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="../assests/js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="../assests/js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="../assests/js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="../assests/js/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="../assests/js/owl.carousel.min.js"></script>
+    <script src="../assests/js/jquery.nice-select.min.js"></script>
+    <!-- swiper js -->
+    <script src="../assests/js/slick.min.js"></script>
+    <script src="../assests/js/jquery.counterup.min.js"></script>
+    <script src="../assests/js/waypoints.min.js"></script>
+    
     <!-- jquery cdn -->
     <script
   src="https://code.jquery.com/jquery-3.5.1.js"
