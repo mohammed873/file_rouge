@@ -1,15 +1,14 @@
 <?php
 
 include('../classes/userclass.php');
-
 $user = new Users();
-$error = array();
 
+$error = array();
 $user_name = '';
 $user_email = '';
 $user_data = '';
 
-/***********************************************************signning up***************************************************************/
+/*********************************** signning up ************************************/
 if (isset($_POST['signup'])) {
     $user_name = htmlspecialchars($_POST['user_name']);
     $user_email = htmlspecialchars($_POST['user_email']);
@@ -44,7 +43,7 @@ if (isset($_POST['signup'])) {
 }
 
 
-/***********************************************************logging in***************************************************************/
+/*********************************** logging in  ************************************/
 if (isset($_POST['login'])) {
     $user_email = htmlspecialchars($_POST['user_email']);
     $user_password = $_POST['user_password'];
@@ -53,26 +52,26 @@ if (isset($_POST['login'])) {
     $error = $user->loginvalidation($user_email,$user_password,$error);
 
     if(count($error)===0){
-        //loging a patient
+
+        /*************************** logging a patient  **************************/
         $table1 = 'users';
         $condition =['user_email' => $user_email];['user_status' => $user_status];
-
         $user_data = $user->login($table1, $condition );
         if($user_data && password_verify($user_password , $user_data['user_password']) && $user_data['user_status'] == 'patient'){
-             //login success
-             $_SESSION['user_id'] = $user_data['user_id'];
-             $_SESSION['user_name'] = $user_data['user_name'];
-             $_SESSION['user_email'] = $user_data['user_email'];
-             $_SESSION['user_picture'] = $user_data['user_picture'];
-             $_SESSION['user_status'] = $user_data['user_status'];
-             header('location:home.php');
-             exit();
+            //login success
+            $_SESSION['user_id'] = $user_data['user_id'];
+            $_SESSION['user_name'] = $user_data['user_name'];
+            $_SESSION['user_email'] = $user_data['user_email'];
+            $_SESSION['user_picture'] = $user_data['user_picture'];
+            $_SESSION['user_status'] = $user_data['user_status'];
+            header('location:home.php');
+            exit();
         }
         else{
-        $error['login_fail'] = "wrong credition";
+            $error['login_fail'] = "wrong credition";
         }
-        
-        //login a doctor
+            
+        /**************************** logging a doctor  ***************************/
         $table2 = 'admins';
         $condition2 =['admin_email' => $user_email];['admin_status' => $user_status];
         $user_data = $user->login($table2, $condition2 );
@@ -87,8 +86,7 @@ if (isset($_POST['login'])) {
             $error['login_fail'] = "wrong credition";
         }
 
-
-        //login a doctor
+        /************************** logging a Secertaire  *************************/
         $table2 = 'admins';
         $condition2 =['admin_email' => $user_email];['admin_status' => $user_status];
         $user_data = $user->login($table2, $condition2 );
