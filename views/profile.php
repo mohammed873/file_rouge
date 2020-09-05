@@ -265,7 +265,7 @@
           </table>
 </div>
  <!-- middle extra profile details ends-->   
-
+<br><br>
 
       <!-- footer part start-->
       <footer class="footer-area">
