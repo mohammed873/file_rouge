@@ -10,7 +10,7 @@ $admin_name = '';
 $admin_email = '';
 $admin_data = '';
 
-/***********************************************************signning up***************************************************************/
+/**********************************signning up **************************************/
 if (isset($_POST['add_admin'])) {
     $admin_name = htmlspecialchars($_POST['admin_name']);
     $admin_email = htmlspecialchars($_POST['admin_email']);
@@ -47,7 +47,8 @@ if (isset($_POST['add_admin'])) {
     }
 }
 
-/* deleting admins (doctors) */
+
+/******************************* deleting admins ************************************/
 if(isset($_GET['delete'])){
     $id=$_GET['delete'];
   
@@ -72,7 +73,9 @@ if(isset($_POST['manage'])){
     header('location:secertaire_panel.php');
 }
 
-/* getting the details of each appointment */
+
+
+/********************* getting the details of each appointment **********************/
 if(isset($_GET['details'])){
     $id=$_GET['details'];
 
@@ -95,7 +98,8 @@ if(isset($_GET['details'])){
     $appointement_status=$row['appointement_status'];
 }
 
-//updating doctor profile information
+
+/*********************** updating doctor profile information ************************/
 if(isset($_POST['update_info']))
 {
    $doctor_name = htmlspecialchars($_POST['doctor_name']);
@@ -110,8 +114,6 @@ if(isset($_POST['update_info']))
    $about_doctor=$_POST['about_doctor'];
    $admin_picture = $_POST['admin_picture'];
    
-  
-    
    //hashing the password before saving the data to the database
     $doctor_password = password_hash($doctor_password, PASSWORD_DEFAULT);
    //updating records
@@ -122,7 +124,3 @@ if(isset($_POST['update_info']))
     $_SESSION['message'] = "Your Profile information has been updated successfuly"; 
    
 }
-
-
-
-
