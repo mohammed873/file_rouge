@@ -1,6 +1,19 @@
 <?php
-include_once('../controllers/appointement.php');
-$conn = new Appointement();
+   include_once ('../controllers/appointement.php');
+   $conn = new Appointement();
+
+  //destroying session while logging out
+  if (isset($_POST['logout'])) {
+    session_destroy();
+    header('location:index.php');
+    exit();
+  }
+
+  //checking if a url contains logging session
+  if (!isset($_SESSION['user_id'])) {
+    header('Location: index.php');
+  }
+
 ?>
 
 <!DOCTYPE html>
@@ -65,7 +78,11 @@ $conn = new Appointement();
                                 </li>
                                 <br>
                                 <li>
-                                    <a class="btn btn-block bg-primary ml-4 text-white" href="index.php">log out</a>
+                                    <form method="post">
+                                        <button type="submit" name="logout" class="btn btn-block bg-primary ml-4 text-white">
+                                            log out
+                                        </button>
+                                    </form>
                                 </li>
                                 <br>
                             </ul>
@@ -229,11 +246,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="../assests/js/slick.min.js"></script>
     <script src="../assests/js/jquery.counterup.min.js"></script>
     <script src="../assests/js/waypoints.min.js"></script>
-    <!-- contact js -->
-    <script src="../assests/js/jquery.ajaxchimp.min.js"></script>
-    <script src="../assests/js/jquery.form.js"></script>
-    <script src="../assests/js/jquery.validate.min.js"></script>
-    <script src="../assests/js/mail-script.js"></script>
 
 </body> 
 </body>
