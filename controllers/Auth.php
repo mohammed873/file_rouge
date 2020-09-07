@@ -78,7 +78,7 @@ if (isset($_POST['login'])) {
         if($user_data && password_verify($user_password , $user_data['admin_password']) && $user_data['admin_status'] == 'doctor')
         {
             //login success
-            $_SESSION['admin_id'] = $admin_data['admin_id'];
+            $_SESSION['admin_id'] = $user_data['admin_id'];
             header('location:../admin_zone/admin_panel.php');
             exit();
         }
@@ -93,7 +93,7 @@ if (isset($_POST['login'])) {
         if($user_data && password_verify($user_password , $user_data['admin_password']) && $user_data['admin_status'] == 'Secertaire')
         {
             //login success
-            $_SESSION['admin_id'] = $admin_data['admin_id'];
+            $_SESSION['admin_id'] = $user_data['admin_id'];
             header('location:../admin_zone/secertaire_panel.php');
             exit();
         }
