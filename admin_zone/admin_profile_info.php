@@ -1,6 +1,11 @@
  <?php
     require_once ('../controllers/admin.php');
     $data = new Admins();
+
+    //checking if a url contains logging session
+    if (!isset($_SESSION['admin_id'])) {
+    header('Location:../views/index.php');
+  }
  ?>
  <!DOCTYPE html>
  <html lang="en">
