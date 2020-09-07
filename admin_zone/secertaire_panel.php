@@ -1,6 +1,18 @@
 <?php
  include_once ('../controllers/admin.php');
  $data = new Admins();
+
+ //destroying session while logging out
+ if (isset($_POST['logout'])) {
+    session_destroy();
+    header('location:../views/index.php');
+    exit();
+  }
+
+  //checking if a url contains logging session
+  if (!isset($_SESSION['admin_id'])) {
+    header('Location:../views/index.php');
+  }
 ?>
 <!DOCTYPE html>
 <head>
@@ -70,7 +82,11 @@
 	        <p><a href="#contact_messages">contact messages</a></p>
 		</div><br><br>
 		<div id="admin_logout_btn2">
-			<a href="../views/index.php">log out</a>
+		    <form method="post">
+                <button type="submit" name="logout" class="btn btn-block text-white">
+                    <h5>log out</h5>
+                </button>
+            </form>
 		</div>
 		
 	</aside>
@@ -115,7 +131,11 @@
 				</div>
 			</div>
 			<div id="responsive_admin_logout_btn">
-				<a href="../views/index.php">log out</a>
+			    <form method="post">
+					<button type="submit" name="logout" class="btn btn-block text-white" style="margin-top: -19px;">
+						<h5>log out</h5>
+					</button>
+				</form>
 			</div>
 		</div>
 	<?php } ?>
