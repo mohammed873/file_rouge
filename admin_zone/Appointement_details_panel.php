@@ -1,6 +1,18 @@
 <?php
- include_once('../controllers/admin.php');
+ include_once ('../controllers/admin.php');
  $data = new Admins();
+
+ //destroying session while logging out
+ if (isset($_POST['logout'])) {
+    session_destroy();
+    header('location:../views/index.php');
+    exit();
+  }
+
+  //checking if a url contains logging session
+  if (!isset($_SESSION['admin_id'])) {
+    header('Location:../views/index.php');
+  }
 ?>
 <!DOCTYPE html>
 <head>
@@ -13,9 +25,7 @@
 	<!-- <link rel="shortcut icon" href="img/favicon.png"> -->
 
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet'>
-	<!-- Font Awesome CSS-->
-	<link rel="stylesheet" href="assests/css/font-awesome.min.css">
-	 <!-- Bootstrap CSS -->
+	<!-- Bootstrap CSS -->
 	 <link rel="stylesheet" href="assests/css/bootstrap.min.css">
 	<!-- Normalize/Reset CSS-->
 	<link rel="stylesheet" href="assests/css/normalize.min.css">
@@ -23,13 +33,14 @@
 	<link rel="stylesheet" href="assests/css/main.css">
 	<!--  bootstrap cdn link-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<!-- Font Awesome CSS cdn-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-
-<?php
+    <?php
         $con = $data->connect();
-		$sql="SELECT * FROM admins WHERE admin_status = 'Secertaire'";
+		$sql="SELECT * FROM admins WHERE admin_status = 'doctor'";
 		$stm=$con->prepare($sql);
 		$stm->execute();
 		$result=$stm->get_result();
@@ -37,85 +48,98 @@
 	<?php while($row=$result->fetch_assoc()){ ?>
 	<aside class="left-sidebar">
 		<div class="logo" style="text-align: center; padding-left: 0 !important;">
-			<h3 class="text-white">Welcome Secertaire 
+			<h3 class="text-white">Welcome Doctor 
 				<span class="text-warning">
-				   <?= $row['admin_name'];?>
+				    <?= $row['admin_name'];?>
 			    </span>
 			</h3>
 			<hr class="bg-white text-white"><br>
 		</div>
-		
 		<div style="text-align: center;">
-		   <img src="<?php echo '../../uploads/' . $row['admin_picture']; ?>" alt="profile_picture" style="width: 150px;height: 190px;border-radius: 5%;">
+			<img src="<?php echo '../uploads/' . $row['admin_picture']; ?>" alt="profile_picture" style="width: 150px;height: 190px;border-radius: 5%;">
 			<br><br>
 			<h6 style="color: white;">name : 
-			   <span style="color: #f1b608;line-height: 30px;">
-			       <?= $row['admin_name'];?> 
-			   </span> 
-		    </h6>
-			<h6 style="color: white;line-height: 30px;">email : 
-			   <span style="color: #f1b608;">
-			        <?= $row['admin_email'];?> 
+				<span style="color:#f1b608;">
+					<?= $row['admin_name'];?> 
+				</span>
+			</h6>
+			<div id="blank-space"></div>
+			<h6 style="color: white;">email : 
+				<span style="color:#f1b608;">
+				    <?= $row['admin_email'];?> 
+				</span>
+			</h6>
+			<div id="blank-space"></div>
+			<h6 style="color: white;">Status : 
+			    <span style="color:#f1b608;">
+				   <?= $row['admin_status'];?> 
 		        </span>
-	        </h6>
-			<h6 style="color: white;line-height: 30px;">Status : 
-			    <span style="color: #f1b608;">
-				    <?= $row['admin_status'];?> 
-		        </span>
-	        </h6>
+			</h6>
+			
 		</div>
-		<br><br><br>
-		<div class="doctor_procceses2 p-2">
-		    <p><a href="#appointments">appointments</a></p>
+		<br>
+		<div class="doctor_procceses" style="z-index: 1;">
+		    <p><a href="admin_profile_info.php">Edit profile Info</a></p>
+		    <p><a href="#add_admin">add admin</a></p>
+		    <p><a href="#admins">admins</a></p>
+			<p><a href="#patients">patients</a></p>
 	        <p><a href="#contact_messages">contact messages</a></p>
-		</div><br><br>
-		<div id="admin_logout_btn2">
-			<a href="../views/index.php">log out</a>
 		</div>
-		
+		<div id="admin_logout_btn">
+		    <form method="post">
+                <button type="submit" name="logout" class="btn btn-block text-white">
+                    <h5>log out</h5>
+                </button>
+            </form>
+		</div>
 	</aside>
 
 <!-- ressponsive panel section -->
 	<div style=" position: fixed;width: 100%;z-index: 1;">
 		<div class="responsive_logo">
-				<h3 class="text-white">Welcome Secertaire 
+				<h3 class="text-white">Welcome Doctor 
 					<span class="text-warning">
-					   <?= $row['admin_name'];?>
+						<?= $row['admin_name'];?>
 					</span>
 				</h3>
 				<hr class="bg-white text-white"><br>
 		</div>
 		<div class="responsive_panel">
-			<br><br><br>
 			<div class="responsive_doctor_profile">
 			    <img src="<?php echo '../uploads/' . $row['admin_picture']; ?>" alt="profile_picture" style="width: 150px;height: 190px;border-radius: 5%;">
 				<br><br>
 				<h6 style="color: white;">name : 
-					<span style="color:#f1b608;">
-					    <?= $row['admin_name'];?>
-					</span> 
-			    </h6>
+				    <span style="color:  #f1b608;">
+					   <?= $row['admin_name'];?> 
+				    </span>
+				</h6>
 				<h6 style="color: white;">email : 
-					<span style="color:#f1b608;">
-						<?= $row['admin_email'];?>
+					<span style="color:  #f1b608;">
+					    <?= $row['admin_email'];?>
 					</span>
 				</h6>
 				<h6 style="color: white;">Status : 
-					<span style="color:#f1b608;">
-						<?= $row['admin_status'];?>
-					</span>
+					<span style="color:  #f1b608;">
+					    <?= $row['admin_status'];?>
+				    </span>
 				</h6>
 			</div>
 			<br><br>
 			<div class="responsive_doctor_procceses">
 				<div id="inner">
-                    <br><br>
-					<p><a href="#appointments">appointments</a></p>
+					<p><a href="admin_profile_info.php">Edit profile Info</a></p>
+				    <p><a href="#add_admin">add admin</a></p>
+					<p><a href="#admins">admins</a></p>
+					<p><a href="#patients">patients</a></p>
 					<p><a href="#contact_messages">contact messages</a></p>
 				</div>
 			</div>
 			<div id="responsive_admin_logout_btn">
-				<a href="../views/index.php">log out</a>
+				<form method="post">
+					<button type="submit" name="logout" class="btn btn-block text-white" style="margin-top: -19px;">
+						<h5>log out</h5>
+					</button>
+				</form>
 			</div>
 		</div>
 	<?php } ?>
@@ -124,98 +148,172 @@
 	<div class="blank-div"></div>
 
 	<!-- the body section -->
-	<div class="right_body" >
+	<div class="right_body">
 	 <br><br>
-	
-        <!--getting the details of each appointment starts-->
-    <div class="col-md-8 text-center p-4" style="margin: auto;background-color:#f2f6f8">
-        <h3 class="text-center text-white bg-dark p-4">
-            The Details of Appointment Number
-            <span class="text-warning">
-                <?php echo $appointment_id;?>
-            </span>
-        </h3>
-        <br>
-        <h3 class="text-dark"> Appointment Number : 
-            <span class="text-primary">
-               <strong>
-                   <?php echo $appointment_id;?>
-               </strong>
-            </span> 
-        </h3><hr>
-        <h4 class="text-dark"> Doctor Name : 
-            <span class="text-primary">
-               <strong>
-                    <?php
-                        $con = $data->connect();
-                        $sql="SELECT * FROM `admins` WHERE admin_status = 'doctor'";
-                        $stm=$con->prepare($sql);
-                        $stm->execute();
-                        $result=$stm->get_result();
-                    ?>
-                    <?php while($row=$result->fetch_assoc()){ ?>
-                        <?=$row['admin_name'];?>
-                    <?php } ?>
-               </strong>
-            </span> 
-        </h4><hr>
-        <h4 class="text-dark"> User Name : 
-            <span class="text-primary">
-                <strong>
-                    <?php echo $user_name;?>
-                <strong>
-            </span> 
-        </h4><hr>
-        <h4 class="text-dark"> User Email : 
-            <span class="text-primary">
-                <strong>
-                    <?php echo $user_email;?>
-                <strong>
-            </span> 
-        </h4><hr>
-        <h4 class="text-dark"> Service Type : 
-            <span class="text-primary">
-                <strong>
-                    <?php echo $service_type;?>
-                <strong>
-            </span> 
-        </h4><hr>
-        <h4 class="text-dark"> Appointment Time : 
-            <span class="text-primary">
-                <strong>
-                    <?php echo $time;?>
-                <strong>
-            </span> 
-        </h4><hr>
-        <h4 class="text-dark"> Appointment Message : 
-            <span class="text-primary">
-                <strong>
-                    <?php echo $message;?>
-                <strong>
-            </span> 
-        </h4><hr>
-        <h4 class="text-dark"> Appointmnet Status : 
-            <span class="text-primary">
-                <strong>
-                    <?php echo $appointement_status;?>
-                <strong>
-            </span> 
-        </h4><hr>
-        <form action="" method="POST">
-            <input type="hidden" name="appointment_id" value="<?php echo $appointment_id;?>">
-            <select name="appointement-status" class="bg-secondary p-2" style="width: 40%;">
-                <option value="">Manage Appointment</option>
-                <option value="On Hold">On Hold</option>
-                <option value="Accepted">Accepted</option>
-                <option value="Declined">Declined</option>
-            </select>
-            <button type="submit" name="manage" class="btn-danger p-2" style="width: 40%;">manage</button>
-        </form>
-        <br><br>
-        <h4> 
-            <a href="secertaire_panel.php" class="text-success">Back To Secertaire Page</a>
-        </h4>
-    </div>
-    </div>
+	 
+    <!-- adding an admin -->
+    <div class="container big-box col-md-8 " style="padding: 1%;background-color: #ffc107; box-shadow: 0px 0px 10px;" id="add_admin">
+			<h2 class="text-center h2">New admin</h2>
+			<hr class="bg-primary">
+				<?php if(count($error) > 0): ?>
+					<div class="alert alert-danger">
+						<?php foreach($error as $error): ?>
+						<li><?php echo $error; ?></li>
+						<?php endforeach; ?>
+					</div>
+				<?php endif; ?>
+				<?php if(isset($_SESSION['message'])): ?>
+					<div class="alert alert-success">
+						<li><?php 
+						echo $_SESSION['message'];
+						unset($_SESSION['message']);
+						?></li>
+					</div>
+				<?php endif; ?>
+				<br>
+				<form action="admin_panel.php" method="post" enctype="multipart/form-data">
+					<div class="row">
+						<div class="form-group col-md-6">
+							<label for="adminname">admin name</label>
+							<input type="text" name="admin_name" class="form-control" placeholder="admin name" value="<?php echo $admin_name; ?>" > 
+						</div>
+						<div class="form-group col-md-6">
+							<label for="adminemail">admin email</label>
+							<input type="text"  name="admin_email" class="form-control" placeholder="email" value="<?php echo $admin_email; ?>"> 
+						</div>
+					</div>
+					<div class="row">   
+						<div class="form-group col-md-6">
+							<label for="password">Password</label>
+							<input type="password" name="admin_password" class="form-control" placeholder="password" > 
+						</div>
+						<div class="form-group col-md-6">
+							<label for="confpassword"> Confirm password</label>
+							<input type="password" name="admin_confpassword" class="form-control" placeholder="confirm password"> 
+						</div>
+					</div>
+					    <div class="form-group">
+							<label for="user_picture">Choose picture</label>
+							<input type="file" name="admin_picture" class="form-control" style="height: 44px;"> 
+                        </div>
+						<div class="form-group">
+							<select name="admin_status" class="bg-secondary p-2 text-white" style="width: 100%;">
+							    <option value="choose the status of the admin">Choose The Status of The Admin</option>
+								<option value="Secertaire">Secertaire</option>
+							</select>
+						</div>
+					
+					<div class="form-group">
+					<button name="add_admin" class="btn btn-primary btn-block">add admin</button>
+					<br>
+					<span> you are already an admin? <a class="text-primary " href="../views/index.php">log in</a></span>
+				</form>
+		</div>
+	</div>
+	<br><br><br>
+
+		<!-- showing admins in a form of a table -->
+	   <div class="col-md-8" style="margin:auto;height:927px;overflow-y:scroll;" id="admins">
+			<?php
+				$con = $data->connect();
+				$sql="SELECT * FROM admins";
+				$stm=$con->prepare($sql);
+				$stm->execute();
+				$result=$stm->get_result();
+			?>
+			<h4 class="text-center bg-success p-2 text-white">doctors table</h4>
+			<br>
+		  <table class="table mr-4 bg-warning">
+			<thead class="thead-dark">
+				<tr>
+					<th>Doctor Name</th>
+					<th>Doctor Email</th>
+					<th>Doctor Status</th>
+					<th>Action</th>
+					
+				</tr>
+			</thead>
+			<tbody class="t_body">
+			<?php while($row=$result->fetch_assoc()){ ?>
+				<tr>
+					<td><?=$row['admin_name'];?></td>
+					<td><?=$row['admin_email'];?></td>
+					<td><?=$row['admin_status'];?></td>
+					<td>
+                    <a href="admin_panel.php?delete=<?=$row['admin_id']; ?>" class="badge badge-danger p-3" onclick="return confirm('Do you want to delete this admin')">delete</a>
+                    </td>
+					
+				<?php } ?>
+			</tbody>
+		  </table>
+	   </div>
+	   <br><br><br>
+
+	   <!-- showing users (patients) -->
+		<div class="col-md-8" style="margin: auto;height:927px;overflow-y:scroll;" id="patients">
+			<?php
+				$con = $data->connect();
+				$sql="SELECT * FROM users";
+				$stm=$con->prepare($sql);
+				$stm->execute();
+				$result=$stm->get_result();
+			?>
+			<h4 class="text-center bg-success p-2 text-white">patients table</h4>
+			<br>
+		  <table class="table  bg-warning">
+			<thead class="thead-dark">
+				<tr>
+					<th>User name</th>
+					<th>User email</th>
+					<th>User status</th>
+					<th>Messages</th>
+				</tr>
+			</thead>
+			<tbody class="t_body">
+			<?php while($row=$result->fetch_assoc()){ ?>
+				<tr>
+					<td><?=$row['user_name'];?></td>
+					<td><?=$row['user_email'];?></td>
+					<td><?=$row['user_status'];?></td>
+					<td>
+					<a href="patient_details.php?details=<?=$row['user_id']; ?>" class="badge badge-primary p-3">messages</a> 
+					</td>
+					
+				<?php } ?>
+			</tbody>
+		  </table>
+	   </div>
+	   <br><br><br>
+
+	<!-- showing all Contact messages -->
+	<div class="col-md-8" style="margin: auto;height:927px;overflow-y:scroll;" id="contact_messages">
+        <?php
+            $con = $data->connect();
+            $sql="SELECT * FROM `contact`";
+            $stm=$con->prepare($sql);
+            $stm->execute();
+            $result=$stm->get_result();
+        ?>
+			<h4 class="text-center bg-success p-2 text-white">contact messages table</h4>
+			<br>
+		  <table class="table mr-4 bg-warning">
+			<thead class="thead-dark">
+				<tr>
+					<th>User Name</th>
+					<th>User Email</th>
+                    <th>Message</th>
+				</tr>
+			</thead>
+			<tbody class="t_body">
+			<?php while($row=$result->fetch_assoc()){ ?>
+				<tr>
+					<td><?=$row['firstname'];?></td>
+                    <td><?=$row['email'];?></td>
+                    <td><?=$row['comment'];?></td>
+				<?php } ?>
+			</tbody>
+          </table>
+	</div>
+
 </body>	
 </html>
