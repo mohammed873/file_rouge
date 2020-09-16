@@ -107,28 +107,7 @@ if (!isset($_SESSION['admin_id'])) {
                 </div>
             <?php endif; ?><br>
         <div id="chatbox">
-            <?php  
-                $con = $conn->connect();
-                $sql="SELECT * from chat WHERE sender_id = '$user_id' OR recevier_id = '$user_id'";
-                $stm=$con->prepare($sql);
-                $stm->execute();
-                $result=$stm->get_result();
-            ?>
-            <?php while($row=$result->fetch_assoc()){ ?>
-                <ul>
-                    <div id="chatbox_item">
-                        <li class="text-success">
-                            <?=$row['sender_name'];?>
-                        </li>
-                        <li class="text-white" id="last_message">
-                            <?=$row['message'];?>
-                        </li>
-                    </div>
-                    <li class="text-warning" >
-                        <?=$row['date'];?>
-                    </li>
-                </ul>
-            <?php } ?>
+            
         </div><br>
         <form action="" method="POST">
             <input type="hidden" name="recevier_id" value="<?php echo $user_id;?>">
@@ -142,7 +121,24 @@ if (!isset($_SESSION['admin_id'])) {
     </div>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>        
-<script src="assests/js/patient_details.js"></script>         
+ <!-- jquery cdn -->
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+   </script>        
+<script src="assests/js/patient_details.js"></script>  
+<script>
+    $(document).ready(function () {
+        //auto refreshing the chatbox div every 3 seconds and reloding the db records too
+        $('#chatbox').load('load.php');
+        setInterval(function(){
+            $('#chatbox').load('load.php');
+        }, 2000);
+
+        //setting the scrolltop of the screen after reloading
+        $(window).scrollTop(113.59);
+    });
+</script>       
 </body>
 </html>
