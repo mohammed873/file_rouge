@@ -202,29 +202,7 @@
             <?php endif; ?>
             <br>
         <div id="chatbox">
-            <?php  
-                $patient = $_SESSION['user_id'];
-                $con = $conn->connect();
-                $sql="SELECT * from chat WHERE sender_id = '$patient'OR recevier_id = '$patient'";
-                $stm=$con->prepare($sql);
-                $stm->execute();
-                $result=$stm->get_result();
-            ?>
-            <?php while($row=$result->fetch_assoc()){ ?>
-                <ul>
-                    <div id="chatbox_item">
-                        <li class="text-success" id="sender_name">
-                            <?=$row['sender_name'];?>
-                        </li>
-                        <li class="text-white">
-                            <?=$row['message'];?>
-                        </li>
-                    </div>
-                    <li class="text-warning" >
-                        <?=$row['date'];?>
-                    <li>
-                </ul><br>                
-            <?php } ?>
+            
         </div><br>
     <form action="profile.php" method="POST">
         <input type="hidden" name="sender_id" value="<?php echo $_SESSION['user_id'];?>">
@@ -326,7 +304,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="../assests/js/jquery.counterup.min.js"></script>
     <script src="../assests/js/waypoints.min.js"></script>
     
-    <!-- jquery cdn -->
+<!-- jquery cdn -->
     <script
   src="https://code.jquery.com/jquery-3.5.1.js"
   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
@@ -335,6 +313,17 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
   <!-- custom js -->
 <script src="../assests/js/profile.js"></script>
   
-  
+<script>
+    $(document).ready(function () {
+        //auto refreshing the chatbox div every 2 seconds and reloding the db records too
+        $('#chatbox').load('load.php');
+        setInterval(function(){
+            $('#chatbox').load('load.php');
+        }, 2000);
+
+        //setting the scrolltop of the screen after reloading
+        $(window).scrollTop(804);
+    });
+</script>
 </body> 
 </html>
