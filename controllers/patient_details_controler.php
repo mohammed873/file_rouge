@@ -38,7 +38,8 @@ if (isset($_POST['consult'])){
     $result=$stmt->get_result();
     $row=$result->fetch_assoc();
         
-    $user_id=$row['user_id'];
+    $_SESSION['patient_id']=$row['user_id'];
+    $user_id = $_SESSION['patient_id'];
     $user_name=$row['user_name'];
     $user_email=$row['user_email'];
     $user_status=$row['user_status'];
